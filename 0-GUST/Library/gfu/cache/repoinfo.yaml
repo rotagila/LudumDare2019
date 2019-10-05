@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-10-05T23:05:24.075+02:00
+  lastUpdatedAtString: 2019-10-05T23:06:46.469+02:00
   initializedAtString: 2019-10-05T22:08:14.441+02:00
   currentGitRemote:
     name: origin
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: master
-    tracking: origin/master
+    name: Simon
+    tracking: 
   currentConfigBranch:
-    name: master
+    name: Simon
     remote:
-      name: origin
-      url: git@github.com:rotagila/LudumDare2019.git
-    trackingBranch: master
+      name: 
+      url: 
+    trackingBranch: 
   currentConfigRemote:
     name: origin
     url: git@github.com:rotagila/LudumDare2019.git

@@ -13,9 +13,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2019-10-05T23:07:23.685+02:00
+  lastUpdatedAtString: 2019-10-05T23:13:20.141+02:00
   initializedAtString: 2019-10-05T23:05:24.942+02:00
   log:
+  - commitID: d611df4ee659f52cce5c3c603612fc6da7c3ba44
+    mergeA: 
+    mergeB: 
+    authorName: simon
+    authorEmail: raguins@hotmail.fr
+    commitEmail: raguins@hotmail.fr
+    commitName: simon
+    summary: Shop quasi-fini il faut l'interface des skills
+    description: 
+    timeString: 2019-10-05T23:12:51.000+02:00
+    commitTimeString: 2019-10-05T23:12:51.000+02:00
+    changes:
+    - path: 0-GUST\Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 61a2083c631c39513c5f67d84f20e4eae621292d
     mergeA: 
     mergeB: 

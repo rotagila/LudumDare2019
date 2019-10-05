@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-10-05T23:07:23.813+02:00
+  lastUpdatedAtString: 2019-10-05T23:17:05.080+02:00
   initializedAtString: 2019-10-05T22:08:16.733+02:00
   entries:
   - path: 0-GUST\Assets\Materials.meta
@@ -538,6 +538,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: 0-GUST\Library\assetDatabase3
+    fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\assetDatabase3
+    projectPath: Library\assetDatabase3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: 0-GUST\Library\CrashedAssetImports.txt
+    fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\CrashedAssetImports.txt
+    projectPath: Library\CrashedAssetImports.txt
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: 0-GUST\Library\EditorInstance.json
     fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\EditorInstance.json
     projectPath: Library\EditorInstance.json
@@ -550,6 +562,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: 0-GUST\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: 0-GUST\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: 0-GUST\Library\gfu\cache\gitstatusentries.yaml
     fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
@@ -559,12 +583,6 @@ MonoBehaviour:
   - path: 0-GUST\Library\gfu\cache\gittrackingstatus.yaml
     fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: 0-GUST\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1321,6 +1339,12 @@ MonoBehaviour:
   - path: 0-GUST\Temp\UnityTempFile-16be8925248dc844f83e149e361f8487
     fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Temp\UnityTempFile-16be8925248dc844f83e149e361f8487
     projectPath: Temp\UnityTempFile-16be8925248dc844f83e149e361f8487
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Temp\UnityTempFile-17354b58ce9f6f14cb1ed88a8dc6476c
+    fullPath: C:\Users\ragui\OneDrive\Documents\Unity\LudumDare2019\0-GUST\Temp\UnityTempFile-17354b58ce9f6f14cb1ed88a8dc6476c
+    projectPath: Temp\UnityTempFile-17354b58ce9f6f14cb1ed88a8dc6476c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1

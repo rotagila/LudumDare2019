@@ -13,19 +13,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-10-05T00:10:25.385-04:00
-  initializedAtString: 2019-10-05T00:10:25.359-04:00
+  lastUpdatedAtString: 2019-10-05T23:05:24.170+02:00
+  initializedAtString: 2019-10-05T23:05:24.010+02:00
   localBranches:
   - name: master
     tracking: origin/master
+  - name: Simon
+    tracking: 
   remoteBranches:
+  - name: origin/bolt
+    tracking: '[None]'
+  - name: origin/guards
+    tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
   - name: origin/master
     tracking: '[None]'
+  - name: origin/MovementsAndSkillMenu
+    tracking: '[None]'
   remotes:
   - name: origin
-    url: https://github.com/rotagila/LudumDare2019.git
+    url: git@github.com:rotagila/LudumDare2019.git
     login: 
     user: 
     host: 
@@ -34,34 +42,58 @@ MonoBehaviour:
   localConfigBranches:
     keys:
     - master
+    - Simon
     values:
     - name: master
       remote:
         name: origin
-        url: https://github.com/rotagila/LudumDare2019.git
+        url: git@github.com:rotagila/LudumDare2019.git
       trackingBranch: master
+    - name: Simon
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
+      - bolt
+      - guards
       - HEAD
       - master
+      - MovementsAndSkillMenu
     subKeyValues:
     - Values:
+      - name: bolt
+        remote:
+          name: origin
+          url: git@github.com:rotagila/LudumDare2019.git
+        trackingBranch: 
+      - name: guards
+        remote:
+          name: origin
+          url: git@github.com:rotagila/LudumDare2019.git
+        trackingBranch: 
       - name: HEAD
         remote:
           name: origin
-          url: https://github.com/rotagila/LudumDare2019.git
+          url: git@github.com:rotagila/LudumDare2019.git
         trackingBranch: 
       - name: master
         remote:
           name: origin
-          url: https://github.com/rotagila/LudumDare2019.git
+          url: git@github.com:rotagila/LudumDare2019.git
+        trackingBranch: 
+      - name: MovementsAndSkillMenu
+        remote:
+          name: origin
+          url: git@github.com:rotagila/LudumDare2019.git
         trackingBranch: 
   configRemotes:
     keys:
     - origin
     values:
     - name: origin
-      url: https://github.com/rotagila/LudumDare2019.git
+      url: git@github.com:rotagila/LudumDare2019.git

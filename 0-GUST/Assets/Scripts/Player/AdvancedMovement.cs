@@ -12,6 +12,7 @@ public class AdvancedMovement : MonoBehaviour
     public Sprite sprite_west;
     public Sprite sprite_east;
 
+    public float angle;
 
     private float currentSpeed;
 
@@ -75,8 +76,8 @@ public class AdvancedMovement : MonoBehaviour
 
     void HandleSpriteOrientation()
     {
-        var direction = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
-        var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Vector3 direction = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+        angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
         // transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         //Debug.Log(angle);

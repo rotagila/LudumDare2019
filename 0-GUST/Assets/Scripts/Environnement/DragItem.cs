@@ -5,40 +5,64 @@ using UnityEngine;
 public class DragItem : MonoBehaviour
 {
 
-    public Vector2 goal = new Vector2(5, 5);
-    public float speed = 1f;
-    public float attractionRange = 8f;
+    private Vector2 goal = new Vector2(5, 5);
+    public float speed = 0.5f;
+    public float attractionRange = 2f;
+    public float pickUpRange = 1f;
 
-    private Camera cam;
+    public bool pickedUp;
+
+    private AudioSource pickUpSound;
+
+    public GameObject character;
+
     // Start is called before the first frame update
     void Start()
     {
-        cam = Camera.main;
+        if (character == null)
+        {
+            character = GameObject.Find("BasicCharacter");
+        }
+
+        pickUpSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        this.goal = cam.ScreenToWorldPoint(Input.mousePosition);
 
+        this.goal = character.transform.position;
         Vector2 direction = (this.goal - (Vector2)this.transform.position);
         float distance = direction.magnitude;
-        if ( distance < attractionRange)
+        if (distance < attractionRange)
         {
-            if (distance > 0.5f)
+            if (distance > pickUpRange)
             {
                 direction = direction.normalized;
                 this.transform.position += new Vector3(direction.x, direction.y, 0) * speed * Time.deltaTime * attractionRange / distance;
-            } else
+            }
+            else
             {
-                this.PickUp();
-            }  
-        } 
+                if (!pickedUp)
+                {
+                    character.GetComponent<ComposantCount>().PickUp();
+                    pickUpSound.Play();
+                    StartCoroutine(waitForSound());
+                    pickedUp = true;
+                    GetComponent<Renderer>().enabled = false;
+                }
+                
+
+            }
+        }
     }
 
-    void PickUp()
+    IEnumerator waitForSound()
     {
-        // TODO
+        while (pickUpSound.isPlaying)
+        {
+            yield return null;
+        }
         Destroy(gameObject);
     }
 }

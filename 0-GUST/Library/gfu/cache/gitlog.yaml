@@ -13,9 +13,159 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2019-10-05T16:15:58.107-04:00
+  lastUpdatedAtString: 2019-10-05T22:05:42.051-04:00
   initializedAtString: 2019-10-05T14:58:59.615-04:00
   log:
+  - commitID: 40dc738d41bd259eaad288a06353b3b81271ebfe
+    mergeA: 
+    mergeB: 
+    authorName: clement-ramat
+    authorEmail: balstik17@gmail.com
+    commitEmail: balstik17@gmail.com
+    commitName: clement-ramat
+    summary: added vision masks
+    description: 
+    timeString: 2019-10-05T20:03:47.000-04:00
+    commitTimeString: 2019-10-05T20:03:47.000-04:00
+    changes:
+    - path: 0-GUST\Assets\Bolt.prefab
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Bolt.prefab
+      projectPath: Assets\Bolt.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: 0-GUST\Assets\Bolt.prefab.meta
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Bolt.prefab.meta
+      projectPath: Assets\Bolt.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: 0-GUST\Assets\Images\coneMask.png
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Images\coneMask.png
+      projectPath: Assets\Images\coneMask.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: 0-GUST\Assets\Images\coneMask.png.meta
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Images\coneMask.png.meta
+      projectPath: Assets\Images\coneMask.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: 0-GUST\Assets\Images\vision.png
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Images\vision.png
+      projectPath: Assets\Images\vision.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: 0-GUST\Assets\Images\vision.png.meta
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Images\vision.png.meta
+      projectPath: Assets\Images\vision.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: 0-GUST\Assets\Scenes\TestBoltScene.unity
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Scenes\TestBoltScene.unity
+      projectPath: Assets\Scenes\TestBoltScene.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: 0-GUST\Assets\Scenes\TestBoltScene.unity.meta
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Scenes\TestBoltScene.unity.meta
+      projectPath: Assets\Scenes\TestBoltScene.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: 0-GUST\Assets\Vision1.prefab
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Vision1.prefab
+      projectPath: Assets\Vision1.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: 0-GUST\Assets\Vision1.prefab.meta
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Vision1.prefab.meta
+      projectPath: Assets\Vision1.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: 0-GUST\Assets\Vision2.prefab
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Vision2.prefab
+      projectPath: Assets\Vision2.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: 0-GUST\Assets\Vision2.prefab.meta
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Vision2.prefab.meta
+      projectPath: Assets\Vision2.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: 0-GUST\Library\SceneVisibilityState.asset
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\SceneVisibilityState.asset
+      projectPath: Library\SceneVisibilityState.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\ShaderCache\EditorEncounteredVariants
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\ShaderCache\EditorEncounteredVariants
+      projectPath: Library\ShaderCache\EditorEncounteredVariants
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\StateCache\Hierarchy\a7706b-mainStage.json
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\StateCache\Hierarchy\a7706b-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\a7706b-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\StateCache\SceneView\afb815-mainStage.json
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\StateCache\SceneView\afb815-mainStage.json
+      projectPath: Library\StateCache\SceneView\afb815-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\assetDatabase3
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: 0-GUST\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: f4577cab3a5e6dfb0e26c7376f5a067fe4d4bdc2
     mergeA: 
     mergeB: 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-10-05T14:58:58.285-04:00
+  lastUpdatedAtString: 2019-10-05T16:15:15.038-04:00
   initializedAtString: 2019-10-05T14:53:06.213-04:00
   localBranches:
   - name: bolt
@@ -23,6 +23,8 @@ MonoBehaviour:
   - name: master
     tracking: origin/master
   remoteBranches:
+  - name: origin/bolt
+    tracking: '[None]'
   - name: origin/guards
     tracking: '[None]'
   - name: origin/HEAD
@@ -63,11 +65,17 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
+      - bolt
       - guards
       - HEAD
       - master
     subKeyValues:
     - Values:
+      - name: bolt
+        remote:
+          name: origin
+          url: https://github.com/rotagila/LudumDare2019.git
+        trackingBranch: 
       - name: guards
         remote:
           name: origin

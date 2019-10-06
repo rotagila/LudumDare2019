@@ -13,45 +13,81 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-10-05T16:12:37.965-04:00
+  lastUpdatedAtString: 2019-10-05T19:59:56.142-04:00
   initializedAtString: 2019-10-05T14:52:53.577-04:00
   entries:
-  - path: 0-GUST\Assets\Bolt.cs
-    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Bolt.cs
-    projectPath: Assets\Bolt.cs
+  - path: 0-GUST\Assets\Bolt.prefab
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Bolt.prefab
+    projectPath: Assets\Bolt.prefab
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: 0-GUST\Assets\Bolt.cs.meta
-    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Bolt.cs.meta
-    projectPath: Assets\Bolt.cs.meta
+  - path: 0-GUST\Assets\Bolt.prefab.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Bolt.prefab.meta
+    projectPath: Assets\Bolt.prefab.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: 0-GUST\Assets\Images.meta
-    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Images.meta
-    projectPath: Assets\Images.meta
+  - path: 0-GUST\Assets\Images\coneMask.png
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Images\coneMask.png
+    projectPath: Assets\Images\coneMask.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: 0-GUST\Assets\Images\boulon.png
-    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Images\boulon.png
-    projectPath: Assets\Images\boulon.png
+  - path: 0-GUST\Assets\Images\coneMask.png.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Images\coneMask.png.meta
+    projectPath: Assets\Images\coneMask.png.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: 0-GUST\Assets\Images\boulon.png.meta
-    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Images\boulon.png.meta
-    projectPath: Assets\Images\boulon.png.meta
+  - path: 0-GUST\Assets\Images\vision.png
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Images\vision.png
+    projectPath: Assets\Images\vision.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: 0-GUST\Assets\Scenes\SampleScene.unity
-    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Scenes\SampleScene.unity
-    projectPath: Assets\Scenes\SampleScene.unity
+  - path: 0-GUST\Assets\Images\vision.png.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Images\vision.png.meta
+    projectPath: Assets\Images\vision.png.meta
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Scenes\TestBoltScene.unity
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Scenes\TestBoltScene.unity
+    projectPath: Assets\Scenes\TestBoltScene.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Scenes\TestBoltScene.unity.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Scenes\TestBoltScene.unity.meta
+    projectPath: Assets\Scenes\TestBoltScene.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Vision1.prefab
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Vision1.prefab
+    projectPath: Assets\Vision1.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Vision1.prefab.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Vision1.prefab.meta
+    projectPath: Assets\Vision1.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Vision2.prefab
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Vision2.prefab
+    projectPath: Assets\Vision2.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Vision2.prefab.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Vision2.prefab.meta
+    projectPath: Assets\Vision2.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: 0-GUST\Library\assetDatabase3
     fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\assetDatabase3
     projectPath: Library\assetDatabase3
@@ -88,9 +124,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: 0-GUST\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
+  - path: 0-GUST\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -115,24 +151,6 @@ MonoBehaviour:
   - path: 0-GUST\Library\StateCache\SceneView\afb815-mainStage.json
     fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\StateCache\SceneView\afb815-mainStage.json
     projectPath: Library\StateCache\SceneView\afb815-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: 0-GUST\ProjectSettings\ProjectSettings.asset
-    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\ProjectSettings\ProjectSettings.asset
-    projectPath: ProjectSettings\ProjectSettings.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: 0-GUST\ProjectSettings\QualitySettings.asset
-    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\ProjectSettings\QualitySettings.asset
-    projectPath: ProjectSettings\QualitySettings.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: 0-GUST\ProjectSettings\UnityConnectSettings.asset
-    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\ProjectSettings\UnityConnectSettings.asset
-    projectPath: ProjectSettings\UnityConnectSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

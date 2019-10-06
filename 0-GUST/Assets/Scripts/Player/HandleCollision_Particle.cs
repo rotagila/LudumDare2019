@@ -31,7 +31,5 @@ public class HandleCollision_Particle : MonoBehaviour
 
             Destroy(iceCubesShatterEffect, iceCubesShatterEffect.GetComponent<ParticleSystem>().duration);
         }
-
-
     }
 }

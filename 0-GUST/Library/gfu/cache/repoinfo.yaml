@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-10-06T13:36:38.990+02:00
-  initializedAtString: 2019-10-06T13:36:38.990+02:00
+  lastUpdatedAtString: 2019-10-06T12:21:14.802+02:00
+  initializedAtString: 2019-10-06T12:21:14.802+02:00
   currentGitRemote:
     name: origin
     url: https://github.com/rotagila/LudumDare2019.git

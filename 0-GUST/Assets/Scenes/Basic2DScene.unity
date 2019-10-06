@@ -120,6 +120,56 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &122843592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2817679839709167727, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2817679840075243135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &122843593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122843592}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c4eae5fb218a3348b33062d0768a3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffect: {fileID: 3964205214872721606, guid: bd0826450d652394d9c284e4001f5266,
+    type: 3}
+--- !u!114 &122843594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122843592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a79ec1e3642eee4e9efc4663f4949c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grappleSpeed: 15
+  playerSpeed: 5
+  maxDistance: 10
+  grapple: {fileID: 4315439228101677601, guid: fa3675f60c9106d48a69af459c7804ce, type: 3}
+--- !u!114 &122843597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122843592}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8d26d2de58fe042a9094a1db6fab29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffect: {fileID: 3739222259051698038, guid: d7a9ea36d63f08b468509ade1db91331,
+    type: 3}
 --- !u!1 &215625350
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,6 +352,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+
 --- !u!1 &1136348150
 GameObject:
   m_ObjectHideFlags: 0
@@ -5226,14 +5277,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1681037095}
   - component: {fileID: 1681037100}
-  - component: {fileID: 1681037099}
-  - component: {fileID: 1681037098}
-  - component: {fileID: 1681037097}
   - component: {fileID: 1681037096}
   - component: {fileID: 1681037101}
   m_Layer: 0
   m_Name: PauvreTarget
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5265,20 +5313,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burntSprite: {fileID: 21300000, guid: 4724a35f3135bc549a732e0e8f7ea57c, type: 3}
---- !u!114 &1681037097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681037094}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77497552e5575a849a399cf17b8167bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleEffect: {fileID: 843428775083620948, guid: ed17549ca150c49468f1147f8144e20d,
+  subParticleEffect: {fileID: 3716895129230976801, guid: 2fc8dc7e97cb7424eb58405271384315,
     type: 3}
+
 --- !u!114 &1681037098
 MonoBehaviour:
   m_ObjectHideFlags: 0

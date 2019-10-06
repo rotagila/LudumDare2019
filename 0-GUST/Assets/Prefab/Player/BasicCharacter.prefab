@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2817679839709167722}
   - component: {fileID: 1606031037}
   - component: {fileID: 1606031038}
+  - component: {fileID: 2576084448600718091}
   m_Layer: 0
   m_Name: BasicCharacter
   m_TagString: Untagged
@@ -160,3 +161,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basicVision: {fileID: 1163338894946724495, guid: 2fb9b751ae8bb5d459ab2974123710d1,
     type: 3}
+--- !u!114 &2576084448600718091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2817679839709167727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e328a4c23637a4b4f833c43b34a966d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

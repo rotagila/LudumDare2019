@@ -133,13 +133,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122843592}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c4eae5fb218a3348b33062d0768a3ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 3964205214872721606, guid: bd0826450d652394d9c284e4001f5266,
     type: 3}
+--- !u!114 &122843594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122843592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a79ec1e3642eee4e9efc4663f4949c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 20
 --- !u!114 &122843597
 MonoBehaviour:
   m_ObjectHideFlags: 0

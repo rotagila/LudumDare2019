@@ -12,7 +12,6 @@ public class Skill_IceCubesLauncher : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-
             Vector3 direction = GetDirection();
             var targetDistance = direction.normalized * 0.3f;
 

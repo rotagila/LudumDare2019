@@ -7,6 +7,9 @@ public class HandleCollision_Particle : MonoBehaviour
 
     public Sprite burntSprite;
 
+    public GameObject subParticleEffect;
+    GameObject iceCubesShatterEffect;
+
     private void OnParticleCollision(GameObject other)
     {
         if(other.name.Equals("ParticleSystem_Flamethrower(Clone)"))
@@ -18,7 +21,17 @@ public class HandleCollision_Particle : MonoBehaviour
         {
             Debug.Log("emp'd");
         }
+        else if (other.name.Equals("ParticleSystem_IceCubesLauncher(Clone)"))
+        {
+            Debug.Log("freezzze");
 
-        
+            iceCubesShatterEffect = Instantiate(subParticleEffect, transform.position, Quaternion.identity);
+
+            iceCubesShatterEffect.GetComponent<ParticleSystem>().Play();
+
+            Destroy(iceCubesShatterEffect, iceCubesShatterEffect.GetComponent<ParticleSystem>().duration);
+        }
+
+
     }
 }

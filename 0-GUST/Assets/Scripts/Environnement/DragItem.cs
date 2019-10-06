@@ -10,6 +10,10 @@ public class DragItem : MonoBehaviour
     public float attractionRange = 2f;
     public float pickUpRange = 1f;
 
+    public bool pickedUp;
+
+    private AudioSource pickUpSound;
+
     public GameObject character;
 
     // Start is called before the first frame update
@@ -19,6 +23,8 @@ public class DragItem : MonoBehaviour
         {
             character = GameObject.Find("BasicCharacter");
         }
+
+        pickUpSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,19 +34,35 @@ public class DragItem : MonoBehaviour
         this.goal = character.transform.position;
         Vector2 direction = (this.goal - (Vector2)this.transform.position);
         float distance = direction.magnitude;
-        if ( distance < attractionRange)
+        if (distance < attractionRange)
         {
             if (distance > pickUpRange)
             {
                 direction = direction.normalized;
                 this.transform.position += new Vector3(direction.x, direction.y, 0) * speed * Time.deltaTime * attractionRange / distance;
-            } else
+            }
+            else
             {
-                character.GetComponent<ComposantCount>().PickUp();
-                Destroy(gameObject);
-            }  
-        } 
+                if (!pickedUp)
+                {
+                    character.GetComponent<ComposantCount>().PickUp();
+                    pickUpSound.Play();
+                    StartCoroutine(waitForSound());
+                    pickedUp = true;
+                    GetComponent<Renderer>().enabled = false;
+                }
+                
+
+            }
+        }
     }
 
-    
+    IEnumerator waitForSound()
+    {
+        while (pickUpSound.isPlaying)
+        {
+            yield return null;
+        }
+        Destroy(gameObject);
+    }
 }

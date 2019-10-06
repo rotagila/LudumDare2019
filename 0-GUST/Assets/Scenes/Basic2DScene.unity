@@ -5217,6 +5217,7 @@ MonoBehaviour:
   sprite_south: {fileID: 21300000, guid: 0f4090dad2f2eb843ac5ddb0d808cc80, type: 3}
   sprite_west: {fileID: 21300000, guid: f83125942b555484aaee4224f4162125, type: 3}
   sprite_east: {fileID: 21300000, guid: 0815dab0842889140bd855958ce334fc, type: 3}
+  angle: 0
 --- !u!114 &1681037099
 MonoBehaviour:
   m_ObjectHideFlags: 0

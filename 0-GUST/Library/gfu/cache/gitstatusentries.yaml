@@ -13,24 +13,204 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-10-05T13:20:21.356-04:00
-  initializedAtString: 2019-10-05T13:20:21.356-04:00
+  lastUpdatedAtString: 2019-10-05T22:48:36.888-04:00
+  initializedAtString: 2019-10-05T14:52:53.577-04:00
   entries:
-  - path: 0-GUST\.gitignore
-    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\.gitignore
-    projectPath: .gitignore
-    originalPath: .gitignore
-    indexStatus: 6
-    workTreeStatus: 0
+  - path: 0-GUST\Assets\Sounds.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds.meta
+    projectPath: Assets\Sounds.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\bouiboui.mp3
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\bouiboui.mp3
+    projectPath: Assets\Sounds\bouiboui.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\bouiboui.mp3.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\bouiboui.mp3.meta
+    projectPath: Assets\Sounds\bouiboui.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\bouiboui2.mp3
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\bouiboui2.mp3
+    projectPath: Assets\Sounds\bouiboui2.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\bouiboui2.mp3.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\bouiboui2.mp3.meta
+    projectPath: Assets\Sounds\bouiboui2.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\bouibouiSimple.mp3
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\bouibouiSimple.mp3
+    projectPath: Assets\Sounds\bouibouiSimple.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\bouibouiSimple.mp3.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\bouibouiSimple.mp3.meta
+    projectPath: Assets\Sounds\bouibouiSimple.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\call1.mp3
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\call1.mp3
+    projectPath: Assets\Sounds\call1.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\call1.mp3.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\call1.mp3.meta
+    projectPath: Assets\Sounds\call1.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\call2.mp3
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\call2.mp3
+    projectPath: Assets\Sounds\call2.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\call2.mp3.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\call2.mp3.meta
+    projectPath: Assets\Sounds\call2.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\enemy1.mp3
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\enemy1.mp3
+    projectPath: Assets\Sounds\enemy1.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\enemy1.mp3.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\enemy1.mp3.meta
+    projectPath: Assets\Sounds\enemy1.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\enemy2.mp3
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\enemy2.mp3
+    projectPath: Assets\Sounds\enemy2.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\enemy2.mp3.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\enemy2.mp3.meta
+    projectPath: Assets\Sounds\enemy2.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\paf.mp3
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\paf.mp3
+    projectPath: Assets\Sounds\paf.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\paf.mp3.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\paf.mp3.meta
+    projectPath: Assets\Sounds\paf.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\select.mp3
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\select.mp3
+    projectPath: Assets\Sounds\select.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\select.mp3.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\select.mp3.meta
+    projectPath: Assets\Sounds\select.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\spotted.mp3
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\spotted.mp3
+    projectPath: Assets\Sounds\spotted.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\spotted.mp3.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\spotted.mp3.meta
+    projectPath: Assets\Sounds\spotted.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\unlock1.mp3
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\unlock1.mp3
+    projectPath: Assets\Sounds\unlock1.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\unlock1.mp3.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\unlock1.mp3.meta
+    projectPath: Assets\Sounds\unlock1.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\unlock2.mp3
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\unlock2.mp3
+    projectPath: Assets\Sounds\unlock2.mp3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: 0-GUST\Assets\Sounds\unlock2.mp3.meta
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Assets\Sounds\unlock2.mp3.meta
+    projectPath: Assets\Sounds\unlock2.mp3.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: 0-GUST\Library\assetDatabase3
     fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: 0-GUST\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+  - path: 0-GUST\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: 0-GUST\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: 0-GUST\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: 0-GUST\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: 0-GUST\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: 0-GUST\Library\StateCache\Hierarchy\a7706b-mainStage.json
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\StateCache\Hierarchy\a7706b-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\a7706b-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: 0-GUST\Library\StateCache\SceneView\afb815-mainStage.json
+    fullPath: C:\Users\cleme\OneDrive\Documents\Unity Projects\LudumDare2019\0-GUST\Library\StateCache\SceneView\afb815-mainStage.json
+    projectPath: Library\StateCache\SceneView\afb815-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

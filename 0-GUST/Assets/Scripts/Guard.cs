@@ -4,32 +4,52 @@ using UnityEngine;
 
 public class Guard : MonoBehaviour
 {
-    public Vector2 goal;
-    public float speed = 5f;
+    public GridManager gridManager;
+    public FieldOfView fov;
+    public Transform player;
+
+    public List<Vector2Int> path;
+    public int current = 0;
+    float speed = 2f;
+    float minDist = 0.01f;
+    public bool canMove = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        goal = new Vector2(10, 10);
+        gridManager = FindObjectOfType<GridManager>();
+        fov = GetComponent<FieldOfView>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        MoveWith(Seek());
+        //A remplacer par si le joueur est détécté;
+        if (Input.GetButton("Jump"))
+        {
+            Debug.Log("space pressed");
+            path = gridManager.getPath(transform.position, player.position);
+            if(path != null)
+            {
+                canMove = true;
+            }
+        }
+        if (canMove)
+            move();
     }
 
-    Vector2 Seek()
+    void move()
     {
-        Vector2 distanceVector = ((Vector2)this.transform.position - this.goal).normalized;
-        print(this.transform.position);
-        print(distanceVector);
-        return distanceVector * speed ;
-          
-    }
-
-    void MoveWith(Vector2 vector)
-    {
-        this.transform.position += new Vector3(vector.x, vector.y, 0);
+        Vector3 gridSpotCellCenter = gridManager.grid.GetCellCenterWorld((Vector3Int)path[current]);
+        if (Vector2.Distance(gridSpotCellCenter, (Vector2)transform.position) < minDist)
+        {
+            current++;
+            if(current >= path.Count)
+            {
+                current = 0;
+                canMove = false;
+            }
+        }
+        transform.position = Vector2.MoveTowards(transform.position, gridSpotCellCenter, Time.deltaTime * speed);
     }
 }

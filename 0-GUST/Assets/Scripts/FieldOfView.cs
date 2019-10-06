@@ -51,4 +51,13 @@ public class FieldOfView : MonoBehaviour {
 		angle += transform.eulerAngles.y;
 		return new Vector2(Mathf.Sin(angle * Mathf.Deg2Rad), Mathf.Cos(angle * Mathf.Deg2Rad));
 	}
+
+    public Transform getPlayerTransform()
+    {
+        if(visibleTargets != null && visibleTargets.Count > 0)
+        {
+            return visibleTargets[0];
+        }
+        return null;
+    }
 }

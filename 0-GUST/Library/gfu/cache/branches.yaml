@@ -13,15 +13,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-10-05T00:10:25.385-04:00
-  initializedAtString: 2019-10-05T00:10:25.359-04:00
+  lastUpdatedAtString: 2019-10-05T18:41:46.912-04:00
+  initializedAtString: 2019-10-05T18:41:46.905-04:00
   localBranches:
   - name: master
     tracking: origin/master
+  - name: MovementsAndSkillMenu
+    tracking: origin/MovementsAndSkillMenu
   remoteBranches:
   - name: origin/HEAD
     tracking: '[None]'
-  - name: origin/master
+  - name: origin/Simon
     tracking: '[None]'
   remotes:
   - name: origin
@@ -34,19 +36,25 @@ MonoBehaviour:
   localConfigBranches:
     keys:
     - master
+    - MovementsAndSkillMenu
     values:
     - name: master
       remote:
         name: origin
         url: https://github.com/rotagila/LudumDare2019.git
       trackingBranch: master
+    - name: MovementsAndSkillMenu
+      remote:
+        name: origin
+        url: https://github.com/rotagila/LudumDare2019.git
+      trackingBranch: MovementsAndSkillMenu
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
       - HEAD
-      - master
+      - Simon
     subKeyValues:
     - Values:
       - name: HEAD
@@ -54,7 +62,7 @@ MonoBehaviour:
           name: origin
           url: https://github.com/rotagila/LudumDare2019.git
         trackingBranch: 
-      - name: master
+      - name: Simon
         remote:
           name: origin
           url: https://github.com/rotagila/LudumDare2019.git

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-10-05T00:09:10.292-04:00
-  initializedAtString: 2019-10-05T00:09:10.292-04:00
+  lastUpdatedAtString: 2019-10-05T22:35:29.188-04:00
+  initializedAtString: 2019-10-05T22:35:29.188-04:00
   currentGitRemote:
     name: origin
     url: https://github.com/rotagila/LudumDare2019.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: master
-    tracking: origin/master
+    name: MovementsAndSkillMenu
+    tracking: origin/MovementsAndSkillMenu
   currentConfigBranch:
-    name: master
+    name: MovementsAndSkillMenu
     remote:
       name: origin
       url: https://github.com/rotagila/LudumDare2019.git
-    trackingBranch: master
+    trackingBranch: MovementsAndSkillMenu
   currentConfigRemote:
     name: origin
     url: https://github.com/rotagila/LudumDare2019.git

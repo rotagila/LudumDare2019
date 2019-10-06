@@ -9,6 +9,7 @@ public class FieldOfView : MonoBehaviour {
 	public LayerMask targetMask;
 	public LayerMask obstacleMask;
 	public List<Transform> visibleTargets = new List<Transform>();
+    public bool chasePlayer = false;
 
     private void OnDrawGizmosSelected()
     {
@@ -28,13 +29,14 @@ public class FieldOfView : MonoBehaviour {
         FindVisibleTargets();
         foreach(Transform t in visibleTargets)
         {
+            chasePlayer = true;
             Debug.DrawLine(transform.position, t.position, Color.red);
         }
     }
 
 	void FindVisibleTargets() {
-		visibleTargets.Clear ();
-        Collider2D[] targets = Physics2D.OverlapCircleAll (transform.position, fovRadius, targetMask);
+		visibleTargets.Clear();
+        Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, fovRadius, targetMask);
 		for (int i = 0; i < targets.Length; i++) {
 			Transform target = targets[i].transform;
 			Vector3 dirToTarget = (target.position - transform.position).normalized;

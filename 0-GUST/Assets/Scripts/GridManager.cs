@@ -39,6 +39,7 @@ public class GridManager : MonoBehaviour
 
     public List<Vector2Int> getPath(Vector3 start, Vector3 end)
     {
+        path.Clear();
         CreateGrid();
         Vector2Int endPosOnGrid = getPosOnGrid((Vector2)end);
         Vector2Int startPosOnGrid = getPosOnGrid((Vector2)start);

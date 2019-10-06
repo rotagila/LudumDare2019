@@ -120,6 +120,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &122843592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2817679839709167727, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2817679840075243135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &122843597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122843592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8d26d2de58fe042a9094a1db6fab29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffect: {fileID: 3739222259051698038, guid: d7a9ea36d63f08b468509ade1db91331,
+    type: 3}
 --- !u!1 &215625350
 GameObject:
   m_ObjectHideFlags: 0
@@ -5145,9 +5165,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1681037095}
   - component: {fileID: 1681037100}
-  - component: {fileID: 1681037099}
-  - component: {fileID: 1681037098}
-  - component: {fileID: 1681037097}
   - component: {fileID: 1681037096}
   - component: {fileID: 1681037101}
   m_Layer: 0
@@ -5184,52 +5201,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burntSprite: {fileID: 21300000, guid: 4724a35f3135bc549a732e0e8f7ea57c, type: 3}
---- !u!114 &1681037097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681037094}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77497552e5575a849a399cf17b8167bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleEffect: {fileID: 843428775083620948, guid: ed17549ca150c49468f1147f8144e20d,
-    type: 3}
---- !u!114 &1681037098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681037094}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85d8c9bebef6eca4f957b25522567306, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxMovementSpeed: 0.15
-  accelerationFactor: 0.75
-  decelerationFactor: 1.5
-  sprite_north: {fileID: 21300000, guid: f135dfd09c53b724fbc535467afc6901, type: 3}
-  sprite_south: {fileID: 21300000, guid: 0f4090dad2f2eb843ac5ddb0d808cc80, type: 3}
-  sprite_west: {fileID: 21300000, guid: f83125942b555484aaee4224f4162125, type: 3}
-  sprite_east: {fileID: 21300000, guid: 0815dab0842889140bd855958ce334fc, type: 3}
---- !u!114 &1681037099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681037094}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1547ad4d38899c24984c2c1ec2f46c4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 25
 --- !u!212 &1681037100
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5376,6 +5347,11 @@ PrefabInstance:
     - target: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817679839709167722, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

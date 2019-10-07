@@ -369,7 +369,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7c475897878f84b46a3ac9d0e95364e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dbd50079883491741b9ac3ce871ef197, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -826,7 +826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextDialog: {fileID: 387613031}
-  nextDialogToShow: 2
+  nextDialogToShow: 42
   text_zone: {fileID: 885328185}
   button_play: {fileID: 3651661775572818375, guid: 4dba125bc9bd7614494319dbe3dd12b2,
     type: 3}
@@ -853,9 +853,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bennaorSceneHandler: {fileID: 0}
+  basicCharacter: {fileID: 0}
   composantCount: 0
   countText: {fileID: 0}
   currentLevel: 0
+  nextDialogToShow: 0
 --- !u!114 &1165662032 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 890277605, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
@@ -1196,16 +1198,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 122843594, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2817679839709167723, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1606031037, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 122843594, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -1333,14 +1335,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 26
       objectReference: {fileID: 0}
+    - target: {fileID: 1793326128, guid: 80e5c73fc7af8c840b314d5dbf8b2a73, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7937749144431747416, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1793326128, guid: 80e5c73fc7af8c840b314d5dbf8b2a73, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7937749142859458489, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
         type: 3}

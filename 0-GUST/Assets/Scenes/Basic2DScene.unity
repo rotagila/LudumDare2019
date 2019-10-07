@@ -325,9 +325,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67437c56cf0fcad4dac522cd213ec405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bennaorSceneHandler: {fileID: 0}
+  basicCharacter: {fileID: 2129029222}
   composantCount: 0
   countText: {fileID: 0}
   currentLevel: 0
+  nextDialogToShow: 0
 --- !u!1 &1136348150
 GameObject:
   m_ObjectHideFlags: 0
@@ -5412,6 +5415,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2817679840075243135}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2129029222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2817679839709167727, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2817679840075243135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &745741865342951373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5647,6 +5656,10 @@ PrefabInstance:
       propertyPath: countText
       value: 
       objectReference: {fileID: 1165662032}
+    - target: {fileID: 122843594, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6, type: 3}
 --- !u!1001 &3190455371715422219
@@ -5995,5 +6008,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 25.999939
       objectReference: {fileID: 0}
+    - target: {fileID: 7937749144267126702, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: GameHandler
+      value: 
+      objectReference: {fileID: 938966595}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80e5c73fc7af8c840b314d5dbf8b2a73, type: 3}

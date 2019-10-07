@@ -23,12 +23,27 @@ public class Door : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        if (_camera == null)
+            _camera = GameObject.Find("Main Camera").GetComponent<Ancor_Follow>();
+
         string tmp;
 
         tmp = Regex.Match(_inTrans.name, @"\d+").Value;
         _in = Int32.Parse(tmp);
         tmp = Regex.Match(_outTrans.name, @"\d+").Value;
         _out = Int32.Parse(tmp);
+
+        if (TableauIn == null)
+        {
+            TableauIn = GameObject.Find("Tableau" + _in);
+        }
+
+
+        if (TableauOut == null)
+        {
+            TableauIn = GameObject.Find("Tableau" + _out);
+        }
     }
 
     // Update is called once per frame
@@ -41,7 +56,7 @@ public class Door : MonoBehaviour
     {
         if (i == _in)
         {
-            if (TableauIn != null)
+            if (TableauIn != null && TableauOut != null)
             {
                 TableauOut.SetActive(true);
                 TableauIn.SetActive(false);
@@ -52,7 +67,7 @@ public class Door : MonoBehaviour
         }
         else
         {
-            if (TableauIn != null)
+            if (TableauIn != null && TableauOut != null)
             {
                 TableauIn.SetActive(true);
                 TableauOut.SetActive(false);

@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786082ff100f6d34ea48812804fe2a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 519420030}
+  _camera: {fileID: 0}
   TableauIn: {fileID: 747334127}
   TableauOut: {fileID: 1933252675}
   _inTrans: {fileID: 205870452}
@@ -17783,7 +17783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786082ff100f6d34ea48812804fe2a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 519420030}
+  _camera: {fileID: 0}
   TableauIn: {fileID: 1933252675}
   TableauOut: {fileID: 979878366}
   _inTrans: {fileID: 652774879}
@@ -18277,7 +18277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786082ff100f6d34ea48812804fe2a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 519420030}
+  _camera: {fileID: 0}
   TableauIn: {fileID: 979878366}
   TableauOut: {fileID: 1599833585}
   _inTrans: {fileID: 655355356}
@@ -20170,7 +20170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786082ff100f6d34ea48812804fe2a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 519420030}
+  _camera: {fileID: 0}
   TableauIn: {fileID: 628981132}
   TableauOut: {fileID: 124061098}
   _inTrans: {fileID: 620767765}
@@ -26709,7 +26709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786082ff100f6d34ea48812804fe2a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 519420030}
+  _camera: {fileID: 0}
   TableauIn: {fileID: 0}
   TableauOut: {fileID: 0}
   _inTrans: {fileID: 1212210213}
@@ -27033,7 +27033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786082ff100f6d34ea48812804fe2a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 519420030}
+  _camera: {fileID: 0}
   TableauIn: {fileID: 1599833585}
   TableauOut: {fileID: 177070202}
   _inTrans: {fileID: 1496296859}
@@ -39559,9 +39559,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bennaorSceneHandler: {fileID: 0}
+  basicCharacter: {fileID: 0}
   composantCount: 0
   countText: {fileID: 0}
   currentLevel: 0
+  nextDialogToShow: 0
 --- !u!1 &1284150444
 GameObject:
   m_ObjectHideFlags: 0
@@ -45305,7 +45307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786082ff100f6d34ea48812804fe2a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 519420030}
+  _camera: {fileID: 0}
   TableauIn: {fileID: 0}
   TableauOut: {fileID: 0}
   _inTrans: {fileID: 2018259896}
@@ -45679,7 +45681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!156049354 &1599833586
 Grid:
   m_ObjectHideFlags: 0
@@ -47339,6 +47341,49 @@ Transform:
   m_Father: {fileID: 1599833587}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1702527278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1702527280}
+  - component: {fileID: 1702527279}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1702527279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702527278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfbe15609e09ddf4ead8c67e6b65b5e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1702527280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702527278}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.44421, y: -23.797932, z: -24.515772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1710680563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 745741867278725759, guid: 7ce81955313b3624f91eab5da62178ba,
@@ -48112,7 +48157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786082ff100f6d34ea48812804fe2a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 519420030}
+  _camera: {fileID: 0}
   TableauIn: {fileID: 0}
   TableauOut: {fileID: 0}
   _inTrans: {fileID: 1594514546}
@@ -48335,7 +48380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786082ff100f6d34ea48812804fe2a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 519420030}
+  _camera: {fileID: 0}
   TableauIn: {fileID: 124061098}
   TableauOut: {fileID: 177070202}
   _inTrans: {fileID: 1006270828}

@@ -13,6 +13,19 @@ public class Ancor_Follow : MonoBehaviour
     void Start()
     {
         camera = GetComponent<Camera>();
+
+    }
+
+    public void GetAnchors()
+    {
+
+        GameObject anchors = GameObject.Find("Ancors");
+
+        for (int i = 0; i < anchors.transform.childCount; i++)
+        {
+            AncorList[i] = anchors.transform.GetChild(i);
+            Debug.Log("CHILD" + i);
+        }
     }
 
     // Update is called once per frame

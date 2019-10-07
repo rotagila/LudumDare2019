@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Guard : MonoBehaviour
 {
-    //public GridManager gridManager;
-    GridManager gridManager;
-    //public FieldOfView fov;
+    public GridManager gridManager;
     private FieldOfView fov;
     public Transform[] patrolPoints;
     public Transform player;
+    public GameObject lvlFader;
 
     public Sprite enemyBack;
     public Sprite enemyFront;
@@ -18,8 +17,9 @@ public class Guard : MonoBehaviour
     public List<Vector2Int> path;
     public int current = 0;
     public int patCurrent = 0;
-    float speed = 2f;
-    float minDist = 0.2f;
+    public float patrolSpeed = 2f;
+    public float chaseSpeed = 5f;
+    float minDist = 0.1f;
     float maxRange = 12f;
     public bool canMove = false;
 
@@ -69,7 +69,10 @@ public class Guard : MonoBehaviour
             }
         }
         lookAtDirection(target);
-        transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * speed);
+        if(patrolling)
+            transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * patrolSpeed);
+        else
+            transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * chaseSpeed);
     }
 
     void lookAtDirection(Vector3 target)
@@ -118,7 +121,7 @@ public class Guard : MonoBehaviour
         }
     }
 
-    public void test()
+    public void chasePlayer()
     {
         path = gridManager.getPath(transform.position, player.transform.position);
         if (path != null)
@@ -130,23 +133,12 @@ public class Guard : MonoBehaviour
         {
             canMove = false;
             //On peut faire mourrir le joueur par exemple
+            lvlFader.GetComponent<LevelFader>().FadeToLevel();
         }
         if (canMove)
             move(false);
         if (Vector2.Distance(transform.position, player.transform.position) > maxRange)
             fov.chasePlayer = false;
-    }
-
-    public void chasePlayer()
-    {
-        //on récupère le centre de la cellule de la tilemap
-        
-
-        //on détermine dans quel sens le garde doit regarder
-        
-
-        //Si on a atteint le noeud courrant, on passe au suivant
-        
     }
 
     public void patrol()

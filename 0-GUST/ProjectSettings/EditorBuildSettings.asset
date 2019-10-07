@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/BennaorScene.unity
+    guid: 1fef517ff4d80e84ab5e9c810fbe4922
+  - enabled: 1
+    path: Assets/Scenes/Basic2DScene.unity
+    guid: 21b6dce10d51f414c834285ce6210ec8
   m_configObjects: {}

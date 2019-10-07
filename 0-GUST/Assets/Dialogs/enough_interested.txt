@@ -1,0 +1,2 @@
+You found enough electronic components ! I can exchange them for <%z></%z>. 
+Are you interested ?

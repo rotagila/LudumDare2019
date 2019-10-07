@@ -7,8 +7,8 @@ public class Guard : MonoBehaviour
     //public GridManager gridManager;
     GridManager gridManager;
     //public FieldOfView fov;
-    //FieldOfView fov;
-
+    private FieldOfView fov;
+    public Transform[] patrolPoints;
     public Transform player;
 
     public Sprite enemyBack;
@@ -17,46 +17,145 @@ public class Guard : MonoBehaviour
 
     public List<Vector2Int> path;
     public int current = 0;
+    public int patCurrent = 0;
     float speed = 2f;
-    float minDist = 0.01f;
+    float minDist = 0.2f;
+    float maxRange = 12f;
     public bool canMove = false;
 
     // Start is called before the first frame update
     void Start()
     {
         gridManager = FindObjectOfType<GridManager>();
-        //fov = GetComponent<FieldOfView>();
+        fov = GetComponentInChildren<FieldOfView>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //A remplacer par si le joueur est détécté;
-        if (Input.GetButton("Jump"))
-        {
-            Debug.Log("space pressed");
-            path = gridManager.getPath(transform.position, player.position);
-            if(path != null)
-            {
-                canMove = true;
-            }
-        }
-        if (canMove)
-            move();
     }
 
-    void move()
+    void move(bool patrolling)
     {
-        Vector3 gridSpotCellCenter = gridManager.grid.GetCellCenterWorld((Vector3Int)path[current]);
-        if (Vector2.Distance(gridSpotCellCenter, (Vector2)transform.position) < minDist)
+        Vector3 target;
+        Vector3Int pointCell;
+        if (patrolling)
         {
-            current++;
-            if(current >= path.Count)
+            pointCell = gridManager.grid.WorldToCell(patrolPoints[patCurrent].position);
+            target = gridManager.grid.GetCellCenterWorld(pointCell);
+        }
+        else
+        {
+            target = gridManager.grid.GetCellCenterWorld((Vector3Int)path[current]);
+        }
+        if (Vector2.Distance(target, (Vector2)transform.position) < minDist)
+        {
+            if (patrolling)
             {
-                current = 0;
-                canMove = false;
+                patCurrent++;
+                if (patCurrent >= patrolPoints.Length)
+                {
+                    patCurrent = 0;
+                }
+            }
+            else
+            {
+                current++;
+                if (current >= path.Count)
+                {
+                    current = 0;
+                }
             }
         }
-        transform.position = Vector2.MoveTowards(transform.position, gridSpotCellCenter, Time.deltaTime * speed);
+        lookAtDirection(target);
+        transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * speed);
     }
+
+    void lookAtDirection(Vector3 target)
+    {
+        float difX = Mathf.Abs(target.x - transform.position.x);
+        float difY = Mathf.Abs(target.y - transform.position.y);
+        if (difX > difY)
+        {
+            if (target.x < transform.position.x)
+            {
+                Debug.Log("FacingLeft");
+                GetComponent<SpriteRenderer>().sprite = enemySide;
+                GetComponent<SpriteRenderer>().flipX = true;
+                transform.GetChild(0).eulerAngles = new Vector3(180, 90, 0);
+                transform.GetChild(1).eulerAngles = new Vector3(0, 0, 180);
+
+            }
+            if (target.x > transform.position.x)
+            {
+                Debug.Log("FacingRight");
+                GetComponent<SpriteRenderer>().sprite = enemySide;
+                GetComponent<SpriteRenderer>().flipX = false;
+                transform.GetChild(0).eulerAngles = new Vector3(0, 90, 0);
+                transform.GetChild(1).eulerAngles = new Vector3(0, 0, 0);
+            }
+
+        }
+        else
+        {
+            if (target.y < transform.position.y)
+            {
+                Debug.Log("FacingDown");
+                GetComponent<SpriteRenderer>().sprite = enemyFront;
+                GetComponent<SpriteRenderer>().flipX = false;
+                transform.GetChild(0).eulerAngles = new Vector3(90, 90, 0);
+                transform.GetChild(1).eulerAngles = new Vector3(0, 0, 270);
+            }
+            if (target.y > transform.position.y)
+            {
+                Debug.Log("FacingUp");
+                GetComponent<SpriteRenderer>().sprite = enemyBack;
+                GetComponent<SpriteRenderer>().flipX = false;
+                transform.GetChild(0).eulerAngles = new Vector3(270, 90, 0);
+                transform.GetChild(1).eulerAngles = new Vector3(0, 0, 90);
+            }
+        }
+    }
+
+    public void test()
+    {
+        path = gridManager.getPath(transform.position, player.transform.position);
+        if (path != null)
+        {
+            canMove = true;
+        }
+        //si le garde est atteint le joueur, il s'arrête
+        if (Vector3.Distance(transform.position, player.transform.position) <= player.GetComponent<SpriteRenderer>().size.x + minDist)
+        {
+            canMove = false;
+            //On peut faire mourrir le joueur par exemple
+        }
+        if (canMove)
+            move(false);
+        if (Vector2.Distance(transform.position, player.transform.position) > maxRange)
+            fov.chasePlayer = false;
+    }
+
+    public void chasePlayer()
+    {
+        //on récupère le centre de la cellule de la tilemap
+        
+
+        //on détermine dans quel sens le garde doit regarder
+        
+
+        //Si on a atteint le noeud courrant, on passe au suivant
+        
+    }
+
+    public void patrol()
+    {
+        if(patrolPoints != null && patrolPoints.Length >= 1)
+        {
+            move(true);
+        }
+    }
+
+
 }

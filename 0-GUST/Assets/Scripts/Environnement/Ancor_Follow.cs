@@ -23,7 +23,7 @@ public class Ancor_Follow : MonoBehaviour
 
     public void SwitchAncor(int i)
     {
-        Debug.Log(i-1);
+        Debug.Log("Go To Anchor " + (i-1));
 
         Vector3 newPos;
 

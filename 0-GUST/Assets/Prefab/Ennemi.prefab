@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 891210159346564795}
   - component: {fileID: 891210159346564788}
   m_Layer: 0
-  m_Name: EnnemiFront
+  m_Name: Ennemi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,7 +100,6 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   player: {fileID: 0}
   enemyBack: {fileID: 21300000, guid: 2a561c8fe15da254692e3e0f30f06d98, type: 3}
   enemyFront: {fileID: 21300000, guid: fc85e5c2b9497e84d9ddd7fdb4a918df, type: 3}
@@ -183,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc3c4f9830f67494c9a8574ebc34669f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fovRadius: 4
+  fovRadius: 20
   fovAngle: 70
   targetMask:
     serializedVersion: 2
@@ -236,9 +235,9 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 0.19607843, a: 1}
   m_Intensity: 1
-  m_Range: 70
-  m_SpotAngle: 70
-  m_InnerSpotAngle: 7
+  m_Range: 200
+  m_SpotAngle: 90
+  m_InnerSpotAngle: 5
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0

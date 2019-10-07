@@ -3,6 +3,11 @@ using System.Collections.Generic;
 
 public class FieldOfView : MonoBehaviour {
 
+
+
+    private Collider2D[] targets;
+
+
 	public float fovRadius;
 	[Range(0,360)]
 	public float fovAngle;
@@ -28,11 +33,16 @@ public class FieldOfView : MonoBehaviour {
         {
             chasePlayer = true;
         }
+        
+        if(targets == null || targets.Length == 0)
+        {
+            chasePlayer = false;
+        }
     }
 
 	void FindVisibleTargets() {
 		visibleTargets.Clear();
-        Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, fovRadius, targetMask);
+        targets = Physics2D.OverlapCircleAll(transform.position, fovRadius, targetMask);
         //GameObject[] targets = GameObject.FindGameObjectsWithTag("Player");
         for (int i = 0; i < targets.Length; i++) {
             
@@ -44,7 +54,7 @@ public class FieldOfView : MonoBehaviour {
                 Vector2 dirToTarget = new Vector2(target.position.x - transform.position.x, target.position.y-transform.position.y);
                 if (Vector2.Angle(dirToTarget,transform.right) < fovAngle / 2)
                 {
-                    Debug.Log(target.gameObject);
+                    //Debug.Log(target.gameObject);
                     float dstToTarget = Vector2.Distance(transform.position, target.position);
                     if (!Physics2D.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask))
                     {   

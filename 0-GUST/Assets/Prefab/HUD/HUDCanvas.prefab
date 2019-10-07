@@ -204,16 +204,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907690539}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1793326129}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -40, y: -25}
+  m_AnchoredPosition: {x: -40, y: -20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1907690542
@@ -2359,7 +2359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.689, y: 0}
   m_AnchorMax: {x: 1, y: 0.3476951}
-  m_AnchoredPosition: {x: -100.19, y: -42.99994}
+  m_AnchoredPosition: {x: -100.19, y: -42.999878}
   m_SizeDelta: {x: -76.79999, y: -125.01999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7937749144168220855
@@ -2729,6 +2729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillSelectionMenu: {fileID: 0}
   activeSkillsPanels: []
+  GameHandler: {fileID: 0}
 --- !u!1 &7937749144305620620
 GameObject:
   m_ObjectHideFlags: 0

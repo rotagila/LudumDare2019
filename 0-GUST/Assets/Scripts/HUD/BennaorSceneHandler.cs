@@ -50,7 +50,7 @@ public class BennaorSceneHandler : MonoBehaviour
 
     private void Start()
     {
-        HandleDialogs(nextDialogToShow);
+        //HandleDialogs(nextDialogToShow);
     }
 
     // Update is called once per frame
@@ -182,7 +182,7 @@ public class BennaorSceneHandler : MonoBehaviour
         alreadyAnswered = true;
     }
 
-    private void HandleDialogs(int nextDialog)
+    public void HandleDialogs(int nextDialog)
     {
         if ((int)DialogName.START_PART1 == nextDialog)
         {

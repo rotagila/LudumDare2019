@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class ComposantCount : MonoBehaviour
 {
-    public int composantCount = 0;
 
-    public Text countText;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +19,5 @@ public class ComposantCount : MonoBehaviour
         
     }
 
-    public void PickUp()
-    {
-        this.composantCount += 1;
-        countText.text = composantCount.ToString();
-    }
+
 }

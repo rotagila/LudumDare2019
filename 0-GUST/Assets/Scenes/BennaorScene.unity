@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da8d26d2de58fe042a9094a1db6fab29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleEffect: {fileID: 0}
 --- !u!1 &215625350
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,7 +827,8 @@ MonoBehaviour:
   composantCount: 0
   countText: {fileID: 0}
   currentLevel: 0
-  nextDialogToShow: 0
+  nextDialogToShow: 2
+  unlockedSkills: []
 --- !u!114 &1165662032 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 890277605, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,

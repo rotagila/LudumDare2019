@@ -40,6 +40,9 @@ public class GameManager : MonoBehaviour
         "Telescopic_Arms", "Ice_Cubes_Launcher", "EMP", "Flamethrower"
     });
 
+    public List<string> unlockedSkills = new List<string>(new string[] { });
+
+
 
     // Start is called before the first frame update
     void Awake()
@@ -63,9 +66,9 @@ public class GameManager : MonoBehaviour
         bennaorSceneHandler = gameObject.GetComponent<BennaorSceneHandler>();
 
         // S'il y a une erreur ici, c'est que le HUD des composants est désactivé mais c'est pas grave
-        
 
-        
+
+
 
         //switch (currentLevel)
         //{
@@ -143,6 +146,21 @@ public class GameManager : MonoBehaviour
 
             return activeSkills;
         }
+    }
+
+
+    public Dictionary<string, System.Tuple<int, bool>> GetPassiveSkills()
+    {
+
+        Dictionary<string, System.Tuple<int, bool>> passiveSkills = new Dictionary<string, System.Tuple<int, bool>>()
+        {
+            {"Advanced_Movement", new System.Tuple<int, bool>(10, false)},
+            {"Vision_180", new System.Tuple<int, bool>(5, false)},
+            {"Vision_360", new System.Tuple<int, bool>(5, false)}
+        };
+
+        return passiveSkills;
+
     }
 
     public void LoadLevels()

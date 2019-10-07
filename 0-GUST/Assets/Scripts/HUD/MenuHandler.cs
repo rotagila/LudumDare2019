@@ -12,15 +12,15 @@ public class MenuHandler : MonoBehaviour
     public GameObject[] activeSkillsPanels;
     public GameObject GameHandler;
 
-    private List<String> unlockedSkills = new List<string>(new string[] 
-    {
-        "Basic_Vision",
-      "Flamethrower", "EMP"
-    });
+    //private List<string> unlockedSkills = new List<string>(new string[] 
+    //{
+    //    "Basic_Vision",
+    //  "Flamethrower", "EMP"
+    //});
 
     private List<String> allSkills = new List<string>(new string[]
     {
-        "Basic_Vision", "Vision_180", "Vision_360", "Advanced_Movement", "Movement_Rollers",
+        "Basic_Vision", "Vision_180", "Vision_360", "Advanced_Movement",
       "Flamethrower", "Ice_Cubes_Launcher", "Tazzer", "Telescopic_Arms", "Benn_Camo", "EMP"
     }); 
 
@@ -46,6 +46,7 @@ public class MenuHandler : MonoBehaviour
     {
         string t = clickedPanel.GetComponentInChildren<Text>().text;
 
+        DisablePassiveScripts();
         DisableScripts(t);
         ResetPanelColors();
 
@@ -53,6 +54,45 @@ public class MenuHandler : MonoBehaviour
         //EnableScript()
 
         clickedPanel.GetComponent<Image>().color = new Color(0, 255, 0, 150);
+    }
+
+    void DisablePassiveScripts()
+    {
+        if (GameHandler != null)
+        {
+            Dictionary<string, System.Tuple<int, bool>> passiveSkills = GameHandler.GetComponent<GameManager>().GetPassiveSkills();
+
+
+            foreach (KeyValuePair<string, System.Tuple<int, bool>> entry in passiveSkills)
+            {
+                if((entry.Key == "Advanced_Movement") && entry.Value.Item2)
+                {
+                    GameHandler.GetComponent<GameManager>().basicCharacter.GetComponent("BasicMovement").gameObject.SetActive(false);
+                    GameHandler.GetComponent<GameManager>().basicCharacter.GetComponent("AdvancedMovement").gameObject.SetActive(true);
+                }
+                if ((entry.Key == "Advanced_Movement") && !entry.Value.Item2)
+                {
+                    GameHandler.GetComponent<GameManager>().basicCharacter.GetComponent("BasicMovement").gameObject.SetActive(true);
+                    GameHandler.GetComponent<GameManager>().basicCharacter.GetComponent("AdvancedMovement").gameObject.SetActive(false);
+                }
+
+                if (entry.Key == "Vision_180")
+                {
+                    if (!entry.Value.Item2)
+                        GameHandler.GetComponent<GameManager>().basicCharacter.GetComponent("Skill_180Vision").gameObject.SetActive(true);
+                    else
+                        GameHandler.GetComponent<GameManager>().basicCharacter.GetComponent("Skill_BasicVision").gameObject.SetActive(false);
+                }
+
+                if (entry.Key == "Vision_360")
+                {
+                    if (!entry.Value.Item2)
+                        GameHandler.GetComponent<GameManager>().basicCharacter.GetComponent("Skill_180Vision").gameObject.SetActive(false);
+                    else
+                        GameHandler.GetComponent<GameManager>().basicCharacter.GetComponent("Skill_BasicVision").gameObject.SetActive(false);
+                }
+            }
+        }
     }
 
     void DisableScripts(string dontDisable)
@@ -63,7 +103,6 @@ public class MenuHandler : MonoBehaviour
         {
             Dictionary<string, System.Tuple<int, bool>> activeSkills = GameHandler.GetComponent<GameManager>().GetSkills(true);
 
-            //GameHandler.GetComponent<GameManager>().basicCharacter.GetComponent("Skill_Telescopic_Arms").gameObject.SetActive(false);
             foreach (KeyValuePair<string, System.Tuple<int, bool>> entry in activeSkills)
             {
 
@@ -116,8 +155,8 @@ public class MenuHandler : MonoBehaviour
             if (go != null)
             {
                 Button b = go.GetComponent<Button>();
-
-                if (unlockedSkills.Contains(s))
+                
+                if (GameHandler.GetComponent<GameManager>().unlockedSkills.Contains(s))
                     b.interactable = true;
                 else
                     b.interactable = false;

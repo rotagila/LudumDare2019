@@ -26,9 +26,13 @@ public class TableauManager : MonoBehaviour
         {
             Transform newpos = collision.GetComponentInChildren<Door>().OpenDoor(currentTableau);
             transform.position = newpos.position;
+            Debug.Log("at " + currentTableau);
 
             string tmp = Regex.Match(newpos.name, @"\d+").Value;
             currentTableau = Int32.Parse(tmp);
+
+            Debug.Log("go to " + currentTableau);
+
         }
     }
 }

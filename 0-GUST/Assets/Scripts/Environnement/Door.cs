@@ -36,14 +36,15 @@ public class Door : MonoBehaviour
 
     public Transform OpenDoor(int i)
     {
+
         if (i == _in)
         {
-            _camera.SwitchAncor(i);
+            _camera.SwitchAncor(_out);
             return _outTrans;
         }
         else
         {
-            _camera.SwitchAncor(i - 2);
+            _camera.SwitchAncor(_in);
             return _inTrans;
         }
     }

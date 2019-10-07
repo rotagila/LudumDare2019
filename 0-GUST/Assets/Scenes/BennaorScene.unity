@@ -788,6 +788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 938966596}
+  - component: {fileID: 938966598}
   - component: {fileID: 938966597}
   m_Layer: 0
   m_Name: GameHandler
@@ -838,6 +839,21 @@ MonoBehaviour:
   numberOfComponents: 42
   requiredNumberForUpgrade: 42
   upgradeName: Flamethrower
+--- !u!114 &938966598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938966595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67437c56cf0fcad4dac522cd213ec405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  composantCount: 0
+  countText: {fileID: 0}
+  currentLevel: 0
 --- !u!114 &1165662032 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 890277605, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
@@ -1311,12 +1327,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 26
       objectReference: {fileID: 0}
-    - target: {fileID: 7937749144431747416, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
-        type: 3}
+    - target: {fileID: 1793326128, guid: 80e5c73fc7af8c840b314d5dbf8b2a73, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1793326128, guid: 80e5c73fc7af8c840b314d5dbf8b2a73, type: 3}
+    - target: {fileID: 7937749144431747416, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

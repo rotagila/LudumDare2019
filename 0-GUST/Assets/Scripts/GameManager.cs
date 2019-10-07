@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     public int currentLevel = 0;
 
     public int nextDialogToShow = 0;
+
 
     // skill, cost, isUnlocked
     private Dictionary<string, System.Tuple<int, bool>> skills = new Dictionary<string, System.Tuple<int, bool>>()
@@ -143,6 +145,11 @@ public class GameManager : MonoBehaviour
 
             return activeSkills;
         }
+    }
+
+    public void LoadLevels()
+    {
+        SceneManager.LoadScene("Levels");
     }
 
     //public List<System.Tuple<string, Component>> GetSkillsScripts(bool onlyActiveSkills)

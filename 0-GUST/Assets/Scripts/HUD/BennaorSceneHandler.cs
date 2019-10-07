@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System.Text;
-using UnityEngine.SceneManagement;
 
 public class BennaorSceneHandler : MonoBehaviour
 {
@@ -14,7 +13,6 @@ public class BennaorSceneHandler : MonoBehaviour
     public Button button_play;
     public Button button_yes;
     public Button button_no;
-    public string nextLevelName;
 
     public GameObject BennaorPanel;
     public GameObject GameHandler;
@@ -142,8 +140,11 @@ public class BennaorSceneHandler : MonoBehaviour
 
     public void OnClickPlay()
     {
-        if (GameHandler != null) GameHandler.GetComponent<GameManager>().SetNextDialogToShow(2);
-        SceneManager.LoadScene(nextLevelName);
+        if (GameHandler != null)
+        {
+            GameHandler.GetComponent<GameManager>().SetNextDialogToShow(2);
+            GameHandler.GetComponent<GameManager>().LoadLevels();
+        }
     }
 
     private void ShowYesNoButtons()

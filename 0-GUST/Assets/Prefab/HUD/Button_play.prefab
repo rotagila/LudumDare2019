@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play next level
+  m_Text: Play
 --- !u!1 &6731261422722736200
 GameObject:
   m_ObjectHideFlags: 0

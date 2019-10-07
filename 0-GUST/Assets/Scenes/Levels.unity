@@ -27339,6 +27339,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ce81955313b3624f91eab5da62178ba, type: 3}
+--- !u!1 &977453852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7937749144431747416, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+    type: 3}
+  m_PrefabInstance: {fileID: 1114587502}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &979878366
 GameObject:
   m_ObjectHideFlags: 0
@@ -34429,6 +34435,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7937749144267126702, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: GameHandler
+      value: 
+      objectReference: {fileID: 1270506963}
+    - target: {fileID: 7937749144267126702, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: skillSelectionMenu
+      value: 
+      objectReference: {fileID: 977453852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80e5c73fc7af8c840b314d5dbf8b2a73, type: 3}
 --- !u!1001 &1121750303
@@ -39564,6 +39580,10 @@ MonoBehaviour:
   countText: {fileID: 0}
   currentLevel: 0
   nextDialogToShow: 0
+  unlockedSkills:
+  - Basic_Vision
+  - Flamethrower
+  - EMP
 --- !u!1 &1284150444
 GameObject:
   m_ObjectHideFlags: 0

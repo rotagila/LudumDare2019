@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Skill_Emp : MonoBehaviour
+public class Skill_EMP : MonoBehaviour
 {
     public GameObject particleEffect;
     GameObject empEffect;

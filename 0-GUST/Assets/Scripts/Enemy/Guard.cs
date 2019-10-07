@@ -87,7 +87,6 @@ public class Guard : MonoBehaviour
         {
             if (target.x < transform.position.x)
             {
-                //Debug.Log("FacingLeft");
                 GetComponent<SpriteRenderer>().sprite = enemySide;
                 GetComponent<SpriteRenderer>().flipX = true;
                 transform.GetChild(0).eulerAngles = new Vector3(180, 90, 0);
@@ -96,7 +95,6 @@ public class Guard : MonoBehaviour
             }
             if (target.x > transform.position.x)
             {
-               // Debug.Log("FacingRight");
                 GetComponent<SpriteRenderer>().sprite = enemySide;
                 GetComponent<SpriteRenderer>().flipX = false;
                 transform.GetChild(0).eulerAngles = new Vector3(0, 90, 0);
@@ -108,7 +106,6 @@ public class Guard : MonoBehaviour
         {
             if (target.y < transform.position.y)
             {
-               // Debug.Log("FacingDown");
                 GetComponent<SpriteRenderer>().sprite = enemyFront;
                 GetComponent<SpriteRenderer>().flipX = false;
                 transform.GetChild(0).eulerAngles = new Vector3(90, 90, 0);
@@ -116,7 +113,6 @@ public class Guard : MonoBehaviour
             }
             if (target.y > transform.position.y)
             {
-                //Debug.Log("FacingUp");
                 GetComponent<SpriteRenderer>().sprite = enemyBack;
                 GetComponent<SpriteRenderer>().flipX = false;
                 transform.GetChild(0).eulerAngles = new Vector3(270, 90, 0);

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Skill_IceCubesLauncher : MonoBehaviour
+public class Skill_Ice_Cubes_Launcher : MonoBehaviour
 {
     public GameObject particleEffect;
     GameObject iceCubesLauncherEffect;

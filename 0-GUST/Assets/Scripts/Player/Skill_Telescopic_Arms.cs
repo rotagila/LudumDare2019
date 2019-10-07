@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Skill_TelescopicArms : MonoBehaviour
+public class Skill_Telescopic_Arms : MonoBehaviour
 {
     public float grappleSpeed;
     public float playerSpeed;
@@ -49,7 +49,11 @@ public class Skill_TelescopicArms : MonoBehaviour
             {
                 hooked = true;
             }
-                
+
+            if (grappleInstance.GetComponent<GrappleCollision>().GetIsCollidingDestroy())
+            {
+                ResetSkill();
+            }
 
             // if maxDistance reached OR target reached and nothing hooked
             if ((Vector3.Distance(transform.position, grappleInstance.transform.position) >= maxDistance)
@@ -62,8 +66,10 @@ public class Skill_TelescopicArms : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, grappleInstance.transform.position, playerSpeed * Time.deltaTime);
 
-            if(transform.position == grappleInstance.transform.position)
-                ResetSkill();  
+            float dist = Vector3.Distance(transform.position, grappleInstance.transform.position);
+
+            //if(transform.position == grappleInstance.transform.position)
+            if(dist < 1.0f) ResetSkill();  
         }
     }
 

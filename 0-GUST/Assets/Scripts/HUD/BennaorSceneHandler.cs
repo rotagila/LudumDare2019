@@ -50,7 +50,9 @@ public class BennaorSceneHandler : MonoBehaviour
     private void Start()
     {
         GameHandler = GameObject.Find("GameHandler");
-        Debug.Log("show: " + nextDialogToShow);
+
+        nextDialogToShow = GameHandler.GetComponent<GameManager>().nextDialogToShow;
+
         if (nextDialogToShow == -1)
         {
             // game start

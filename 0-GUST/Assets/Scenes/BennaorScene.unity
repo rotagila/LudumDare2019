@@ -827,7 +827,7 @@ MonoBehaviour:
   composantCount: 0
   countText: {fileID: 0}
   currentLevel: 0
-  nextDialogToShow: 2
+  nextDialogToShow: -1
   unlockedSkills: []
 --- !u!114 &1165662032 stripped
 MonoBehaviour:

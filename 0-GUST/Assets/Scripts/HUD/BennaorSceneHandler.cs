@@ -132,6 +132,7 @@ public class BennaorSceneHandler : MonoBehaviour
 
     public void OnClickPlay()
     {
+        if (GameHandler != null) GameHandler.GetComponent<GameManager>().SetNextDialogToShow(2);
         SceneManager.LoadScene(nextLevelName);
     }
 
@@ -159,7 +160,7 @@ public class BennaorSceneHandler : MonoBehaviour
         numberOfComponents -= requiredNumberForUpgrade;
         nextDialogToShow = (int)DialogName.UPGRADE_INSTALLED;
 
-        if(GameHandler != null) GameHandler.GetComponent<GameManager>().UnlockSkill(upgradeName);
+        if (GameHandler != null) GameHandler.GetComponent<GameManager>().UnlockSkill(upgradeName);
 
         Answered();
     }

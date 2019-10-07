@@ -49,7 +49,11 @@ public class Skill_TelescopicArms : MonoBehaviour
             {
                 hooked = true;
             }
-                
+
+            if (grappleInstance.GetComponent<GrappleCollision>().GetIsCollidingDestroy())
+            {
+                ResetSkill();
+            }
 
             // if maxDistance reached OR target reached and nothing hooked
             if ((Vector3.Distance(transform.position, grappleInstance.transform.position) >= maxDistance)

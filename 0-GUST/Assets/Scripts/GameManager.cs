@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     public int currentLevel = 0;
 
+    public int nextDialogToShow = 0;
+
     // skill, cost, isUnlocked
     private Dictionary<string, System.Tuple<int, bool>> skills = new Dictionary<string, System.Tuple<int, bool>>()
     {
@@ -64,10 +66,9 @@ public class GameManager : MonoBehaviour
         switch (currentLevel)
         {
             case 0:
-                bennaorSceneHandler.HandleDialogs(bennaorSceneHandler.nextDialogToShow);
+                bennaorSceneHandler.HandleDialogs(nextDialogToShow);
                 break;
         }
-        
     }
 
     public void PickUp()
@@ -103,12 +104,20 @@ public class GameManager : MonoBehaviour
 
     public bool UnlockSkill(string name)
     {
-        if(skills.ContainsKey(name))
+        if (skills.ContainsKey(name))
         {
+            composantCount -= skills[name].Item1;
+
             skills[name] = new System.Tuple<int, bool>(skills[name].Item1, skills[name].Item2);
             return true;
         }
+
         return false;
+    }
+
+    public void SetNextDialogToShow(int i)
+    {
+        nextDialogToShow = i;
     }
 
     // Update is called once per frame

@@ -31,7 +31,7 @@ public class ChasePlayerState : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        guard.test();
+        guard.chasePlayer();
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

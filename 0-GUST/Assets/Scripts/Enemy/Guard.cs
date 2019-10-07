@@ -117,36 +117,23 @@ public class Guard : MonoBehaviour
             }
         }
     }
-
-    public void test()
-    {
-        path = gridManager.getPath(transform.position, player.transform.position);
-        if (path != null)
-        {
-            canMove = true;
-        }
-        //si le garde est atteint le joueur, il s'arrête
-        if (Vector3.Distance(transform.position, player.transform.position) <= player.GetComponent<SpriteRenderer>().size.x + minDist)
-        {
-            canMove = false;
-            //On peut faire mourrir le joueur par exemple
-        }
-        if (canMove)
-            move(false);
-        if (Vector2.Distance(transform.position, player.transform.position) > maxRange)
-            fov.chasePlayer = false;
-    }
-
     public void chasePlayer()
     {
-        //on récupère le centre de la cellule de la tilemap
-        
-
-        //on détermine dans quel sens le garde doit regarder
-        
-
-        //Si on a atteint le noeud courrant, on passe au suivant
-        
+            path = gridManager.getPath(transform.position, player.transform.position);
+            if (path != null)
+            {
+                canMove = true;
+            }
+            //si le garde est atteint le joueur, il s'arrête
+            if (Vector3.Distance(transform.position, player.transform.position) <= player.GetComponent<SpriteRenderer>().size.x + minDist)
+            {
+                canMove = false;
+                //On peut faire mourrir le joueur par exemple
+            }
+            if (canMove)
+                move(false);
+            if (Vector2.Distance(transform.position, player.transform.position) > maxRange)
+                fov.chasePlayer = false;
     }
 
     public void patrol()

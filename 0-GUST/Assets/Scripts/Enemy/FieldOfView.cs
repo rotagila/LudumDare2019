@@ -28,6 +28,11 @@ public class FieldOfView : MonoBehaviour {
         {
             chasePlayer = true;
         }
+        
+        if(visibleTargets.Count == 0)
+        {
+            chasePlayer = false;
+        }
     }
 
 	void FindVisibleTargets() {

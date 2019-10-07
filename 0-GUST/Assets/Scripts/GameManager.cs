@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public BennaorSceneHandler bennaorSceneHandler;
 
+    public GameObject basicCharacter;
+
     public int composantCount = 0;
 
     public Text countText;
@@ -30,6 +32,11 @@ public class GameManager : MonoBehaviour
         {"EMP", new System.Tuple<int, bool>(0, false)},
         {"Flamethrower", new System.Tuple<int, bool>(2, false)},
     };
+
+    private List<string> activeSkills = new List<string>(new string[] 
+    {
+        "Telescopic_Arms", "Ice_Cubes_Launcher", "EMP", "Flamethrower"
+    });
 
 
     // Start is called before the first frame update
@@ -59,16 +66,17 @@ public class GameManager : MonoBehaviour
             countText = GameObject.Find("ComposantCount").GetComponentInChildren<Text>();
         }
 
-        bennaorSceneHandler.numberOfComponents = composantCount;
-        bennaorSceneHandler.requiredNumberForUpgrade = GetRequiredNumberForUpgrade();
-        bennaorSceneHandler.upgradeName = GetNextUpgradeName();
+        
 
-        switch (currentLevel)
-        {
-            case 0:
-                bennaorSceneHandler.HandleDialogs(nextDialogToShow);
-                break;
-        }
+        //switch (currentLevel)
+        //{
+        //    case 0:
+        //        bennaorSceneHandler.numberOfComponents = composantCount;
+        //        bennaorSceneHandler.requiredNumberForUpgrade = GetRequiredNumberForUpgrade();
+        //        bennaorSceneHandler.upgradeName = GetNextUpgradeName();
+        //        bennaorSceneHandler.HandleDialogs(nextDialogToShow);
+        //        break;
+        //}
     }
 
     public void PickUp()
@@ -119,6 +127,48 @@ public class GameManager : MonoBehaviour
     {
         nextDialogToShow = i;
     }
+
+    public Dictionary<string, System.Tuple<int, bool>> GetSkills(bool onlyActiveSkills)
+    {
+        if (!onlyActiveSkills) return skills;
+        else
+        {
+            Dictionary<string, System.Tuple<int, bool>> activeSkills = new Dictionary<string, System.Tuple<int, bool>>()
+            {
+                {"Telescopic_Arms", new System.Tuple<int, bool>(9, false)},
+                {"Ice_Cubes_Launcher", new System.Tuple<int, bool>(0, false)},
+                {"EMP", new System.Tuple<int, bool>(0, false)},
+                {"Flamethrower", new System.Tuple<int, bool>(2, false)},
+            };
+
+            return activeSkills;
+        }
+    }
+
+    //public List<System.Tuple<string, Component>> GetSkillsScripts(bool onlyActiveSkills)
+    //{
+    //    List<System.Tuple<string, Component>> list = new List<System.Tuple<string, Component>>();
+
+    //    foreach (KeyValuePair<string, System.Tuple<int, bool>> entry in skills)
+    //    {
+    //        if(onlyActiveSkills)
+    //        {
+    //           if(activeSkills.Contains(entry.Key))
+    //            {
+    //                Component c = basicCharacter.GetComponent(entry.Key);
+    //                list.Add(new System.Tuple<string, Component>(entry.Key, c));
+    //            }
+    //        }else
+    //        {
+    //            Component c = basicCharacter.GetComponent(entry.Key);
+    //            list.Add(new System.Tuple<string, Component>(entry.Key, c));
+    //        }
+            
+    //    }
+
+    //    return list;
+    //}
+
 
     // Update is called once per frame
     void Update()

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Skill_TelescopicArms : MonoBehaviour
+public class Skill_Telescopic_Arms : MonoBehaviour
 {
     public float grappleSpeed;
     public float playerSpeed;

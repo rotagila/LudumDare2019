@@ -162,18 +162,20 @@ public class BennaorSceneHandler : MonoBehaviour
     public void OnClickYes()
     {
         numberOfComponents -= requiredNumberForUpgrade;
-
         nextDialogToShow = (int)DialogName.UPGRADE_INSTALLED;
-        Destroy(button_yes_inst.gameObject);
-        Destroy(button_no_inst.gameObject);
-        waitingForAnswer = false;
-        alreadyAnswered = true;
+        Answered();
+        
     }
 
     //public void OnClickNo(Button yes, Button no)
     public void OnClickNo()
     {
         nextDialogToShow = (int)DialogName.REFUSED_UPGRADE;
+        Answered();
+    }
+
+    private void Answered()
+    {
         Destroy(button_yes_inst.gameObject);
         Destroy(button_no_inst.gameObject);
         waitingForAnswer = false;

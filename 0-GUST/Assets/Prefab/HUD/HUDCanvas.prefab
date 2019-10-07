@@ -663,7 +663,7 @@ GameObject:
   - component: {fileID: 7937749142913132046}
   - component: {fileID: 7937749142913132045}
   m_Layer: 5
-  m_Name: Button_Emp
+  m_Name: Button_EMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -796,7 +796,7 @@ GameObject:
   - component: {fileID: 7937749142920323103}
   - component: {fileID: 7937749142920323102}
   m_Layer: 5
-  m_Name: Button_Rollers
+  m_Name: Button_Movement_Rollers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1157,7 +1157,7 @@ GameObject:
   - component: {fileID: 7937749143202317401}
   - component: {fileID: 7937749143202317400}
   m_Layer: 5
-  m_Name: Button_Arms
+  m_Name: Button_Telescopic_Arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1607,7 +1607,7 @@ GameObject:
   - component: {fileID: 7937749143760685371}
   - component: {fileID: 7937749143760685370}
   m_Layer: 5
-  m_Name: Button_MovementsAdv
+  m_Name: Button_Advanced_Movement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1884,7 +1884,7 @@ GameObject:
   - component: {fileID: 7937749143941245322}
   - component: {fileID: 7937749143941245321}
   m_Layer: 5
-  m_Name: Button_Vision180
+  m_Name: Button_Vision_180
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2006,7 +2006,7 @@ GameObject:
   - component: {fileID: 7937749143943248671}
   - component: {fileID: 7937749143943248670}
   m_Layer: 5
-  m_Name: Button_Camo
+  m_Name: Button_Benn_Camo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2215,7 +2215,7 @@ GameObject:
   - component: {fileID: 7937749144132965229}
   - component: {fileID: 7937749144132965228}
   m_Layer: 5
-  m_Name: Button_Vision
+  m_Name: Button_Basic_Vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2494,7 +2494,7 @@ GameObject:
   - component: {fileID: 7937749144224261427}
   - component: {fileID: 7937749144224261426}
   m_Layer: 5
-  m_Name: Button_IceCubes
+  m_Name: Button_Ice_Cubes_Launcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2748,7 +2748,7 @@ GameObject:
   - component: {fileID: 7937749144305620623}
   - component: {fileID: 7937749144305620622}
   m_Layer: 5
-  m_Name: Button_Vision360
+  m_Name: Button_Vision_360
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

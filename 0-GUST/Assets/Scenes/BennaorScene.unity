@@ -1314,11 +1314,76 @@ PrefabInstance:
     - target: {fileID: 7937749144431747416, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1793326128, guid: 80e5c73fc7af8c840b314d5dbf8b2a73, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749142859458489, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Panel_Benn_Camo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749142920323100, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Movement_Rollers
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749143399768909, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Panel_Ice_Cubes_Launcher
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749143760685368, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Advanced_Movement
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749143941245327, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Vision_180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749144126921487, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Panel_Telescopic_Arms
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749144132965218, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Basic_Vision
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749144168220852, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Panel_EMP
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749144305620620, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Vision_360
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749142913132035, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_EMP
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749143202317406, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Telescopic_Arms
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749143943248668, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Benn_Camo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749144224261424, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Ice_Cubes_Launcher
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80e5c73fc7af8c840b314d5dbf8b2a73, type: 3}

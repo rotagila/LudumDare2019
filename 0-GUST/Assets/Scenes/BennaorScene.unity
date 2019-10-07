@@ -836,6 +836,7 @@ MonoBehaviour:
     type: 3}
   nextLevelName: Basic2DScene
   BennaorPanel: {fileID: 1656939692}
+  GameHandler: {fileID: 938966595}
   numberOfComponents: 42
   requiredNumberForUpgrade: 42
   upgradeName: Flamethrower
@@ -851,6 +852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67437c56cf0fcad4dac522cd213ec405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bennaorSceneHandler: {fileID: 0}
   composantCount: 0
   countText: {fileID: 0}
   currentLevel: 0
@@ -1203,6 +1205,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 122843594, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6, type: 3}
 --- !u!1001 &7937749143170757348
@@ -1327,14 +1333,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 26
       objectReference: {fileID: 0}
-    - target: {fileID: 1793326128, guid: 80e5c73fc7af8c840b314d5dbf8b2a73, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7937749144431747416, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793326128, guid: 80e5c73fc7af8c840b314d5dbf8b2a73, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7937749142859458489, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
         type: 3}

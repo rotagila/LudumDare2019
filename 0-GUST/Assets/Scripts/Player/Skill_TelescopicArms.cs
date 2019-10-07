@@ -62,8 +62,10 @@ public class Skill_TelescopicArms : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, grappleInstance.transform.position, playerSpeed * Time.deltaTime);
 
-            if(transform.position == grappleInstance.transform.position)
-                ResetSkill();  
+            float dist = Vector3.Distance(transform.position, grappleInstance.transform.position);
+
+            //if(transform.position == grappleInstance.transform.position)
+            if(dist < 1.0f) ResetSkill();  
         }
     }
 

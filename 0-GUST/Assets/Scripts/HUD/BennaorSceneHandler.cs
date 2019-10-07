@@ -17,6 +17,7 @@ public class BennaorSceneHandler : MonoBehaviour
     public string nextLevelName;
 
     public GameObject BennaorPanel;
+    public GameObject GameHandler;
 
     public int numberOfComponents;
 
@@ -91,7 +92,7 @@ public class BennaorSceneHandler : MonoBehaviour
             int required = requiredNumberForUpgrade - numberOfComponents;
             dialog_text = ReplaceTag(dialog_text, "%y", required.ToString());
 
-            dialog_text = ReplaceTag(dialog_text, "%z", upgradeName);
+            dialog_text = ReplaceTag(dialog_text, "%z", upgradeName.Replace('_', ' '));
         }
         else if (dn == DialogName.ENOUGH)
         {
@@ -163,6 +164,13 @@ public class BennaorSceneHandler : MonoBehaviour
     {
         numberOfComponents -= requiredNumberForUpgrade;
         nextDialogToShow = (int)DialogName.UPGRADE_INSTALLED;
+
+        if(GameHandler != null)
+        {
+            GameHandler.GetComponent<GameManager>().UnlockSkill(upgradeName);
+        }
+
+
         Answered();
         
     }

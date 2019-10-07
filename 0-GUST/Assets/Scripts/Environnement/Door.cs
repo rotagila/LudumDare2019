@@ -12,6 +12,9 @@ public class Door : MonoBehaviour
     private int _in;
     private int _out;
 
+    public GameObject TableauIn;
+    public GameObject TableauOut;
+
     [SerializeField]
     private Transform _inTrans;
     [SerializeField]
@@ -38,11 +41,24 @@ public class Door : MonoBehaviour
     {
         if (i == _in)
         {
+            if (TableauIn != null)
+            {
+                TableauOut.SetActive(true);
+                TableauIn.SetActive(false);
+            }
+
             _camera.SwitchAncor(_out);
             return _outTrans;
         }
         else
         {
+            if (TableauIn != null)
+            {
+                TableauIn.SetActive(true);
+                TableauOut.SetActive(false);
+            }
+            //DisableTableauOut
+            //EnableTableauIn
             _camera.SwitchAncor(_in);
             return _inTrans;
         }

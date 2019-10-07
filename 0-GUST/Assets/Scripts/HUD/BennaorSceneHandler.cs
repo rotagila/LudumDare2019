@@ -20,10 +20,10 @@ public class BennaorSceneHandler : MonoBehaviour
     public GameObject GameHandler;
 
     public int numberOfComponents;
-
-    // a changer
     public int requiredNumberForUpgrade = 42;
     public string upgradeName = "Flamethrower";
+
+
 
     private enum DialogName:int
     {
@@ -51,7 +51,7 @@ public class BennaorSceneHandler : MonoBehaviour
 
     private void Start()
     {
-        //HandleDialogs(nextDialogToShow);
+
     }
 
     // Update is called once per frame
@@ -67,7 +67,6 @@ public class BennaorSceneHandler : MonoBehaviour
         {
             HandleDialogs(nextDialogToShow);
         }
-
     }
 
     void ShowDialog(DialogName dn)
@@ -127,16 +126,12 @@ public class BennaorSceneHandler : MonoBehaviour
         buttonPos.y += 50;
 
         Button button_play_inst = Instantiate(button_play, buttonPos, Quaternion.identity);
-        //button_play_inst.transform.parent = BennaorPanel.transform;
         button_play_inst.transform.SetParent(BennaorPanel.transform);
-
         button_play_inst.onClick.AddListener(OnClickPlay);
     }
 
     public void OnClickPlay()
     {
-        // use nextLevelId
-        //SceneManager.LoadScene("Basic2DScene");
         SceneManager.LoadScene(nextLevelName);
     }
 
@@ -159,23 +154,16 @@ public class BennaorSceneHandler : MonoBehaviour
         button_no_inst.onClick.AddListener(OnClickNo);
     }
 
-    //public void OnClickYes(Button yes, Button no)
     public void OnClickYes()
     {
         numberOfComponents -= requiredNumberForUpgrade;
         nextDialogToShow = (int)DialogName.UPGRADE_INSTALLED;
 
-        if(GameHandler != null)
-        {
-            GameHandler.GetComponent<GameManager>().UnlockSkill(upgradeName);
-        }
-
+        if(GameHandler != null) GameHandler.GetComponent<GameManager>().UnlockSkill(upgradeName);
 
         Answered();
-        
     }
 
-    //public void OnClickNo(Button yes, Button no)
     public void OnClickNo()
     {
         nextDialogToShow = (int)DialogName.REFUSED_UPGRADE;

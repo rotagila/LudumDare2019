@@ -5,7 +5,7 @@ using UnityEngine;
 public class Guard : MonoBehaviour
 {
     //public GridManager gridManager;
-    GridManager gridManager;
+    public GridManager gridManager;
     //public FieldOfView fov;
     private FieldOfView fov;
     public Transform[] patrolPoints;
@@ -18,7 +18,10 @@ public class Guard : MonoBehaviour
     public List<Vector2Int> path;
     public int current = 0;
     public int patCurrent = 0;
-    float speed = 2f;
+    public float patrolSpeed = 2f;
+    public float chaseSpeed = 2f;
+
+    private float speed = 2f;
     float minDist = 0.2f;
     float maxRange = 12f;
     public bool canMove = false;
@@ -26,7 +29,7 @@ public class Guard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gridManager = FindObjectOfType<GridManager>();
+        //gridManager = FindObjectOfType<GridManager>();
         fov = GetComponentInChildren<FieldOfView>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
@@ -42,11 +45,13 @@ public class Guard : MonoBehaviour
         Vector3Int pointCell;
         if (patrolling)
         {
+            speed = patrolSpeed;
             pointCell = gridManager.grid.WorldToCell(patrolPoints[patCurrent].position);
             target = gridManager.grid.GetCellCenterWorld(pointCell);
         }
         else
         {
+            speed = chaseSpeed;
             target = gridManager.grid.GetCellCenterWorld((Vector3Int)path[current]);
         }
         if (Vector2.Distance(target, (Vector2)transform.position) < minDist)

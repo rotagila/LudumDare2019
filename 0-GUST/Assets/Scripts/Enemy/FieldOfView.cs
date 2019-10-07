@@ -54,7 +54,7 @@ public class FieldOfView : MonoBehaviour {
                 Vector2 dirToTarget = new Vector2(target.position.x - transform.position.x, target.position.y-transform.position.y);
                 if (Vector2.Angle(dirToTarget,transform.right) < fovAngle / 2)
                 {
-                    Debug.Log(target.gameObject);
+                    //Debug.Log(target.gameObject);
                     float dstToTarget = Vector2.Distance(transform.position, target.position);
                     if (!Physics2D.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask))
                     {   

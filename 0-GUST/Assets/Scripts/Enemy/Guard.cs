@@ -51,7 +51,9 @@ public class Guard : MonoBehaviour
         }
         else
         {
+            print(path);   
             speed = chaseSpeed;
+            // s'il y a une erreur ici, c'est que path est à null (pourquoi ? jsp)
             target = gridManager.grid.GetCellCenterWorld((Vector3Int)path[current]);
         }
         if (Vector2.Distance(target, (Vector2)transform.position) < minDist)

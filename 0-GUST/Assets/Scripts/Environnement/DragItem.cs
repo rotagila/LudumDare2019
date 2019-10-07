@@ -15,6 +15,7 @@ public class DragItem : MonoBehaviour
     private AudioSource pickUpSound;
 
     public GameObject character;
+    public GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,11 @@ public class DragItem : MonoBehaviour
         if (character == null)
         {
             character = GameObject.Find("BasicCharacter");
+        }
+
+        if (gameManager == null)
+        {
+            gameManager = GameObject.Find("GameHandler").GetComponent<GameManager>();
         }
 
         pickUpSound = GetComponent<AudioSource>();
@@ -45,7 +51,7 @@ public class DragItem : MonoBehaviour
             {
                 if (!pickedUp)
                 {
-                    character.GetComponent<ComposantCount>().PickUp();
+                    gameManager.PickUp();
                     pickUpSound.Play();
                     StartCoroutine(waitForSound());
                     pickedUp = true;

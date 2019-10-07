@@ -1,0 +1,2 @@
+You seem to have <%x></%x> electronic components. 
+If you can bring me <%y></%y> more of these, I can give you <%z></%z> !

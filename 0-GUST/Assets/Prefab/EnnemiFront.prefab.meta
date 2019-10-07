@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:0-GUST/Assets/Prefab/EnnemiFront.prefab.meta
 guid: c9008f80298d30a43ae7e50bda7cc55b
 PrefabImporter:
+=======
+guid: a1a7e7ceda739ae4f94b9d8422bc6a89
+folderAsset: yes
+DefaultImporter:
+>>>>>>> master:0-GUST/Assets/Sounds/Ennemi.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

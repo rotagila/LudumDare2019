@@ -23,10 +23,12 @@ public class Ancor_Follow : MonoBehaviour
 
     public void SwitchAncor(int i)
     {
+        Debug.Log(i-1);
+
         Vector3 newPos;
 
-        newPos.x = AncorList[i].transform.position.x;
-        newPos.y = AncorList[i].transform.position.y;
+        newPos.x = AncorList[i-1].transform.position.x;
+        newPos.y = AncorList[i-1].transform.position.y;
         newPos.z = -10;
         transform.position = newPos;
     }

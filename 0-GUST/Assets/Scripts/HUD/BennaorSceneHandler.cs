@@ -51,7 +51,17 @@ public class BennaorSceneHandler : MonoBehaviour
 
     private void Start()
     {
-
+        if (nextDialogToShow == -1)
+        {
+            // game start
+            ShowDialog(0);
+            nextDialogToShow = 0;
+        }else
+        {
+            // game playing
+            HandleDialogs((int)DialogName.GOT_CAUGHT);
+        }
+            
     }
 
     // Update is called once per frame
@@ -184,9 +194,6 @@ public class BennaorSceneHandler : MonoBehaviour
         if ((int)DialogName.START_PART1 == nextDialog)
         {
             ShowDialog(DialogName.START_PART2);
-
-            nextDialogToShow = (int)DialogName.START_PART2;
-
             ShowPlayButton();
         }
         else if ((int)DialogName.GOT_CAUGHT == nextDialog)

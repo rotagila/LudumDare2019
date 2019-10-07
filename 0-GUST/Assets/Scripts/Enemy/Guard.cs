@@ -1,6 +1,7 @@
 ﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Guard : MonoBehaviour
 {
@@ -131,7 +132,10 @@ public class Guard : MonoBehaviour
             if (Vector3.Distance(transform.position, player.transform.position) <= player.GetComponent<SpriteRenderer>().size.x + minDist)
             {
                 canMove = false;
-                //On peut faire mourrir le joueur par exemple
+            //On peut faire mourrir le joueur par exemple
+            GameObject.Find("GameHandler").GetComponent<GameManager>().nextDialogToShow = 2;
+            SceneManager.LoadScene("BennaorScene");
+            GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize = 5;
             }
             if (canMove)
                 move(false);

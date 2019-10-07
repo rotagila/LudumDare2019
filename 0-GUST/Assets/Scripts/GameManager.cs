@@ -60,13 +60,10 @@ public class GameManager : MonoBehaviour
 
     void InitGame()
     {
-       bennaorSceneHandler = gameObject.GetComponent<BennaorSceneHandler>();
+        bennaorSceneHandler = gameObject.GetComponent<BennaorSceneHandler>();
 
-        if (countText == null)
-        {
-            // S'il y a une erreur ici, c'est que le HUD des composants est désactivé mais c'est pas grave
-            countText = GameObject.Find("ComposantCount").GetComponentInChildren<Text>();
-        }
+        // S'il y a une erreur ici, c'est que le HUD des composants est désactivé mais c'est pas grave
+        
 
         
 
@@ -84,6 +81,7 @@ public class GameManager : MonoBehaviour
     public void PickUp()
     {
         this.composantCount += 1;
+        countText = GameObject.Find("ComposantCount").GetComponentInChildren<Text>();
         countText.text = composantCount.ToString();
     }
 
@@ -150,6 +148,7 @@ public class GameManager : MonoBehaviour
     public void LoadLevels()
     {
         SceneManager.LoadScene("Levels");
+        GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize = 16;
     }
 
     //public List<System.Tuple<string, Component>> GetSkillsScripts(bool onlyActiveSkills)

@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class Guard : MonoBehaviour
 {
-    public GridManager gridManager;
-    public FieldOfView fov;
+    //public GridManager gridManager;
+    GridManager gridManager;
+    //public FieldOfView fov;
+    //FieldOfView fov;
+
     public Transform player;
+
+    public Sprite enemyBack;
+    public Sprite enemyFront;
+    public Sprite enemySide;
 
     public List<Vector2Int> path;
     public int current = 0;
@@ -18,7 +25,7 @@ public class Guard : MonoBehaviour
     void Start()
     {
         gridManager = FindObjectOfType<GridManager>();
-        fov = GetComponent<FieldOfView>();
+        //fov = GetComponent<FieldOfView>();
     }
 
     // Update is called once per frame

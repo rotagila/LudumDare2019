@@ -6,8 +6,8 @@ public class FieldOfView : MonoBehaviour {
 	public float fovRadius;
 	[Range(0,360)]
 	public float fovAngle;
-	public LayerMask targetMask;
-	public LayerMask obstacleMask;
+    public LayerMask targetMask;
+    public LayerMask obstacleMask;
 	public List<Transform> visibleTargets = new List<Transform>();
     public bool chasePlayer = false;
 
@@ -37,15 +37,27 @@ public class FieldOfView : MonoBehaviour {
 	void FindVisibleTargets() {
 		visibleTargets.Clear();
         Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, fovRadius, targetMask);
-		for (int i = 0; i < targets.Length; i++) {
+        //GameObject[] targets = GameObject.FindGameObjectsWithTag("Player");
+        for (int i = 0; i < targets.Length; i++) {
+            
 			Transform target = targets[i].transform;
-			Vector3 dirToTarget = (target.position - transform.position).normalized;
-			if (Vector2.Angle (transform.up, dirToTarget) < fovAngle / 2) {
-				float dstToTarget = Vector2.Distance (transform.position, target.position);
-				if (!Physics2D.Raycast (transform.position, dirToTarget, dstToTarget, obstacleMask)) {
-					visibleTargets.Add (target);
+            
+            //if (target.gameObject.tag == "Player")
+            //{
+                
+                Vector3 dirToTarget = (target.position - transform.position).normalized;
+                if (Vector2.Angle(transform.up, dirToTarget) < fovAngle / 2)
+                {
+                    Debug.Log(target.gameObject);
+                    float dstToTarget = Vector2.Distance(transform.position, target.position);
+                    if (!Physics2D.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask))
+                    {
+                        
+                        visibleTargets.Add(target);
+                    }
                 }
-			}
+            //}
+			
 		}
 	}
 

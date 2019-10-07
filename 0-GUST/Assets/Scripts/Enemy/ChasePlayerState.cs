@@ -7,6 +7,9 @@ public class ChasePlayerState : StateMachineBehaviour
     public GridManager gridManager;
     public FieldOfView fov;
     public GameObject player;
+
+    public Guard guard;
+
     public List<Vector2Int> path;
     public int current = 0;
     float speed = 2f;
@@ -20,14 +23,18 @@ public class ChasePlayerState : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         gridManager = FindObjectOfType<GridManager>();
+        Debug.Log(gridManager);
         transform = animator.transform;
+        guard = animator.gameObject.GetComponent<Guard>();
         fov = FindObjectOfType<FieldOfView>();
+        Debug.Log(fov);
         player = GameObject.FindGameObjectWithTag("Player");
         
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        Debug.Log(gridManager);
         path = gridManager.getPath(transform.position, player.transform.position);
         if (path != null)
         {
@@ -61,34 +68,43 @@ void move()
         //on récupère le centre de la cellule de la tilemap
         Vector2 gridSpotCellCenter = gridManager.grid.GetCellCenterWorld((Vector3Int)path[current]);
 
-        //on détermine dans quel sens le guarde doit regarder
-        float difX = Mathf.Abs(path[current].x - transform.position.x);
-        float difY = Mathf.Abs(path[current].y - transform.position.y);
+        //on détermine dans quel sens le garde doit regarder
+        float difX = Mathf.Abs(gridSpotCellCenter.x - transform.position.x);
+        float difY = Mathf.Abs(gridSpotCellCenter.y - transform.position.y);
         if(difX > difY)
         {
-            if (path[current].x < transform.position.x)
+            if (gridSpotCellCenter.x < transform.position.x)
             {
                 Debug.Log("FacingLeft");
-                transform.eulerAngles = new Vector3(0, 0, 90);
+                guard.GetComponent<SpriteRenderer>().sprite = guard.enemySide;
+                guard.GetComponent<SpriteRenderer>().flipX = true;
+                //transform.eulerAngles = new Vector3(0, 0, 90);
             }
-            if (path[current].x > transform.position.x)
+            if (gridSpotCellCenter.x > transform.position.x)
             {
                 Debug.Log("FacingRight");
-                transform.eulerAngles = new Vector3(0, 0, -90);
+                guard.GetComponent<SpriteRenderer>().sprite = guard.enemySide;
+                guard.GetComponent<SpriteRenderer>().flipX = false;
+                //transform.eulerAngles = new Vector3(0, 0, -90);
+
             }
 
         }
         else
         {
-            if (path[current].y < transform.position.y)
+            if (gridSpotCellCenter.y < transform.position.y)
             {
                 Debug.Log("FacingDown");
-                transform.eulerAngles = new Vector3(0, 0, 180);
+                guard.GetComponent<SpriteRenderer>().sprite = guard.enemyFront;
+                guard.GetComponent<SpriteRenderer>().flipX = false;
+                //transform.eulerAngles = new Vector3(0, 0, 180);
             }
-            if (path[current].y > transform.position.y)
+            if (gridSpotCellCenter.y > transform.position.y)
             {
                 Debug.Log("FacingUp");
-                transform.eulerAngles = new Vector3(0, 0, 0);
+                guard.GetComponent<SpriteRenderer>().sprite = guard.enemyBack;
+                guard.GetComponent<SpriteRenderer>().flipX = false;
+                //transform.eulerAngles = new Vector3(0, 0, 0);
             }
         }
 

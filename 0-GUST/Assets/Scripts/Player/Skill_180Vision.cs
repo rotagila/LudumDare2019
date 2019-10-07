@@ -23,6 +23,7 @@ public class Skill_180Vision : MonoBehaviour
     private void OnEnable()
     {
         vision180 = Instantiate(vision180, new Vector3(0, 0, 0), Quaternion.identity);
+        vision180.GetComponent<SpriteRenderer>().sortingOrder = 3;
     }
 
     private void OnDisable()

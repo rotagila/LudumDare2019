@@ -244,7 +244,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5b82ff48954b323408d9d98ce97b5084, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dbd50079883491741b9ac3ce871ef197, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2359,7 +2359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.689, y: 0}
   m_AnchorMax: {x: 1, y: 0.3476951}
-  m_AnchoredPosition: {x: -100.19, y: -43}
+  m_AnchoredPosition: {x: -100.19, y: -42.99994}
   m_SizeDelta: {x: -76.79999, y: -125.01999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7937749144168220855
@@ -2727,14 +2727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ddb9aa5ef2353438b9c3ad17677e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillSelectionMenu: {fileID: 7937749144431747416}
-  activeSkillsPanels:
-  - {fileID: 7937749144360275034}
-  - {fileID: 7937749143399768909}
-  - {fileID: 7937749143850748715}
-  - {fileID: 7937749144126921487}
-  - {fileID: 7937749142859458489}
-  - {fileID: 7937749144168220852}
+  skillSelectionMenu: {fileID: 0}
+  activeSkillsPanels: []
 --- !u!1 &7937749144305620620
 GameObject:
   m_ObjectHideFlags: 0

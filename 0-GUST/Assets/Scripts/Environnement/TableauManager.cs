@@ -24,7 +24,7 @@ public class TableauManager : MonoBehaviour
     {
         if (collision.tag == "Door")
         {
-            Transform newpos = collision.GetComponentInChildren<Door>().OpenDoor(currentTableau);
+            Transform newpos = collision.GetComponent<Door>().OpenDoor(currentTableau);
             transform.position = newpos.position;
             Debug.Log("at " + currentTableau);
 

@@ -23,7 +23,7 @@ public class Guard : MonoBehaviour
     public float chaseSpeed = 2f;
 
     private float speed = 2f;
-    float minDist = 0.2f;
+    float minDist = 0.1f;
     float maxRange = 12f;
     public bool canMove = false;
 
@@ -128,15 +128,6 @@ public class Guard : MonoBehaviour
             {
                 canMove = true;
             }
-            //si le garde est atteint le joueur, il s'arrête
-            if (Vector3.Distance(transform.position, player.transform.position) <= player.GetComponent<SpriteRenderer>().size.x + minDist)
-            {
-                canMove = false;
-            //On peut faire mourrir le joueur par exemple
-            GameObject.Find("GameHandler").GetComponent<GameManager>().nextDialogToShow = 2;
-            SceneManager.LoadScene("BennaorScene");
-            GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize = 5;
-            }
             if (canMove)
                 move(false);
             if (Vector2.Distance(transform.position, player.transform.position) > maxRange)
@@ -151,5 +142,16 @@ public class Guard : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            canMove = false;
+            //On peut faire mourrir le joueur par exemple
+            GameObject.Find("GameHandler").GetComponent<GameManager>().nextDialogToShow = 2;
+            SceneManager.LoadScene("BennaorScene");
+            GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize = 5;
+        }
+    }
 
 }

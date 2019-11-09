@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 891210159346564794}
   - component: {fileID: 891210159346564795}
   - component: {fileID: 891210159346564788}
+  - component: {fileID: 3091118322325026789}
   m_Layer: 0
   m_Name: Ennemi
   m_TagString: Untagged
@@ -97,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c31b0484c31cd8547b6b00b193ba5c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridManager: {fileID: 0}
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -107,6 +109,8 @@ MonoBehaviour:
   path: []
   current: 0
   patCurrent: 0
+  patrolSpeed: 2
+  chaseSpeed: 2
   canMove: 0
 --- !u!95 &891210159346564795
 Animator:
@@ -139,6 +143,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd48866ac485ac4183cdb8cbdcdb114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &3091118322325026789
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891210159346564789}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 2.2836213, y: 4.3720865}
+  m_Direction: 0
 --- !u!1 &891210159995664718
 GameObject:
   m_ObjectHideFlags: 0

@@ -52,6 +52,7 @@ public class BennaorSceneHandler : MonoBehaviour
         GameHandler = GameObject.Find("GameHandler");
 
         nextDialogToShow = GameHandler.GetComponent<GameManager>().nextDialogToShow;
+        numberOfComponents = GameHandler.GetComponent<GameManager>().composantCount;
 
         if (nextDialogToShow == -1)
         {

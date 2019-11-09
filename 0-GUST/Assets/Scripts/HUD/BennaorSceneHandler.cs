@@ -18,8 +18,8 @@ public class BennaorSceneHandler : MonoBehaviour
     public GameObject GameHandler;
 
     public int numberOfComponents;
-    public int requiredNumberForUpgrade = 42;
-    public string upgradeName = "Flamethrower";
+    public int requiredNumberForUpgrade = 9;
+    public string upgradeName = "Grappling Hook";
 
 
 

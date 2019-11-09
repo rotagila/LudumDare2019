@@ -43,6 +43,8 @@ public class Skill_Telescopic_Arms : MonoBehaviour
 
         if(grappleLaunched && (grappleInstance != null) && !hooked)
         {
+            
+
             grappleInstance.transform.position = Vector3.MoveTowards(grappleInstance.transform.position, targetPosition, grappleSpeed * Time.deltaTime);
 
             if (grappleInstance.GetComponent<GrappleCollision>().GetIsColliding())
@@ -59,7 +61,10 @@ public class Skill_Telescopic_Arms : MonoBehaviour
             if ((Vector3.Distance(transform.position, grappleInstance.transform.position) >= maxDistance)
                 || ((grappleInstance.transform.position == targetPosition) && !hooked)
                 )
+            {
                 ResetSkill();
+            }
+                
         }
 
         if(hooked && (grappleInstance != null))

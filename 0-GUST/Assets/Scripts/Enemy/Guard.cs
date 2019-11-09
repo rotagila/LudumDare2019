@@ -150,7 +150,7 @@ public class Guard : MonoBehaviour
             //On peut faire mourrir le joueur par exemple
             GameObject.Find("GameHandler").GetComponent<GameManager>().nextDialogToShow = 2;
             SceneManager.LoadScene("BennaorScene");
-            GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize = 5;
+            //GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize = 5;
         }
     }
 

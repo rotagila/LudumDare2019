@@ -115,13 +115,17 @@ public class GameManager : MonoBehaviour
 
     public bool UnlockSkill(string name)
     {
+        /*
         if (skills.ContainsKey(name))
         {
             composantCount -= skills[name].Item1;
 
             skills[name] = new System.Tuple<int, bool>(skills[name].Item1, skills[name].Item2);
             return true;
-        }
+        }*/
+
+        composantCount -= skills["Telescopic_Arms"].Item1;
+        skills["Telescopic_Arms"] = new System.Tuple<int, bool>(skills["Telescopic_Arms"].Item1, true);
 
         return false;
     }
@@ -195,8 +199,8 @@ public class GameManager : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
-    {
+    //void Update()
+    //{
         
-    }
+    //}
 }

@@ -27591,7 +27591,7 @@ PrefabInstance:
     - target: {fileID: 2409134891789638428, guid: 7457b5807d204414fad7ef49f5de4557,
         type: 3}
       propertyPath: maxMovementSpeed
-      value: 0.5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2409134891789638428, guid: 7457b5807d204414fad7ef49f5de4557,
         type: 3}
@@ -27601,13 +27601,19 @@ PrefabInstance:
     - target: {fileID: 2409134891789638428, guid: 7457b5807d204414fad7ef49f5de4557,
         type: 3}
       propertyPath: accelerationFactor
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2409134891789638428, guid: 7457b5807d204414fad7ef49f5de4557,
         type: 3}
       propertyPath: decelerationFactor
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 465172074130951626, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: vision180
+      value: 
+      objectReference: {fileID: 8194501497614770677, guid: 90124e49fd8307c4d89dde43bba8eb4f,
+        type: 3}
     - target: {fileID: 465172073206622909, guid: 7457b5807d204414fad7ef49f5de4557,
         type: 3}
       propertyPath: m_Enabled
@@ -39817,36 +39823,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1199534108}
     m_Modifications:
-    - target: {fileID: 3091118322325026789, guid: c9008f80298d30a43ae7e50bda7cc55b,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091118322325026789, guid: c9008f80298d30a43ae7e50bda7cc55b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091118322325026789, guid: c9008f80298d30a43ae7e50bda7cc55b,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091118322325026789, guid: c9008f80298d30a43ae7e50bda7cc55b,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091118322325026789, guid: c9008f80298d30a43ae7e50bda7cc55b,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091118322325026789, guid: c9008f80298d30a43ae7e50bda7cc55b,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 4.5
-      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564789, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: m_Name

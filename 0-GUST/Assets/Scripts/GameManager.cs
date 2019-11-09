@@ -127,6 +127,8 @@ public class GameManager : MonoBehaviour
         composantCount -= skills["Telescopic_Arms"].Item1;
         skills["Telescopic_Arms"] = new System.Tuple<int, bool>(skills["Telescopic_Arms"].Item1, true);
 
+        basicCharacter.GetComponent<Skill_Telescopic_Arms>().gameObject.SetActive(true);
+
         return false;
     }
 

@@ -24,6 +24,8 @@ public class Skill_Telescopic_Arms : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0) && !grappleLaunched && !hooked)
         {
+            Debug.Log("lancer grappin");
+
             grappleLaunched = true;
             hooked = false;
 
@@ -43,15 +45,19 @@ public class Skill_Telescopic_Arms : MonoBehaviour
 
         if(grappleLaunched && (grappleInstance != null) && !hooked)
         {
+            
+
             grappleInstance.transform.position = Vector3.MoveTowards(grappleInstance.transform.position, targetPosition, grappleSpeed * Time.deltaTime);
 
             if (grappleInstance.GetComponent<GrappleCollision>().GetIsColliding())
             {
+                Debug.Log("grappin colliding");
                 hooked = true;
             }
 
             if (grappleInstance.GetComponent<GrappleCollision>().GetIsCollidingDestroy())
             {
+                Debug.Log("grappin colliding destroy");
                 ResetSkill();
             }
 
@@ -59,11 +65,16 @@ public class Skill_Telescopic_Arms : MonoBehaviour
             if ((Vector3.Distance(transform.position, grappleInstance.transform.position) >= maxDistance)
                 || ((grappleInstance.transform.position == targetPosition) && !hooked)
                 )
+            {
+                Debug.Log("grappin reset");
                 ResetSkill();
+            }
+                
         }
 
         if(hooked && (grappleInstance != null))
         {
+            Debug.Log("hooked !!");
             transform.position = Vector3.MoveTowards(transform.position, grappleInstance.transform.position, playerSpeed * Time.deltaTime);
 
             float dist = Vector3.Distance(transform.position, grappleInstance.transform.position);

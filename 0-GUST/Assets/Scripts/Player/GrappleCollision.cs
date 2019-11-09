@@ -11,8 +11,8 @@ public class GrappleCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Grabbable")
             isColliding = true;
-        else
-            isCollidingDestroy = true;
+        else if(collision.gameObject.tag != "Player")
+            isCollidingDestroy = true;  
     }
 
     public bool GetIsColliding()

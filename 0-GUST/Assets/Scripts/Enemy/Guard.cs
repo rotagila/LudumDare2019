@@ -144,16 +144,15 @@ public class Guard : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("trigger enter");
         if(collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("ok");
             canMove = false;
             //On peut faire mourrir le joueur par exemple
             GameObject.Find("GameHandler").GetComponent<GameManager>().nextDialogToShow = 2;
-            GameObject.Find("GameHandler").GetComponent<GameManager>().bennaorSceneHandler.numberOfComponents = GameObject.Find("GameHandler").GetComponent<GameManager>().composantCount;
+            //GameObject.Find("GameHandler").GetComponent<GameManager>().bennaorSceneHandler.numberOfComponents = GameObject.Find("GameHandler").GetComponent<GameManager>().composantCount;
             SceneManager.LoadScene("BennaorScene");
-
-            
-            //GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize = 5;
         }
     }
 

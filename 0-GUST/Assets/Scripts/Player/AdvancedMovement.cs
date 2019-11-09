@@ -56,8 +56,6 @@ public class AdvancedMovement : MonoBehaviour
             ComputeCurrentSpeed(MovementType.ACCELERATION);
         }
 
-        Debug.Log(movement * currentSpeed);
-
 
         body2D.MovePosition(body2D.position + movement * currentSpeed * Time.deltaTime);
 

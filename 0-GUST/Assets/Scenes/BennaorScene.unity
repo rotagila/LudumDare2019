@@ -168,7 +168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da8d26d2de58fe042a9094a1db6fab29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleEffect: {fileID: 0}
 --- !u!1 &215625350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,6 +1202,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2817679839709167723, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606031037, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2576084448600718091, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
         type: 3}
       propertyPath: countText
@@ -1214,15 +1222,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 122843594, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167723, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1606031037, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -1239,6 +1238,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HUDCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937749144431747416, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7937749144267126698, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
         type: 3}
@@ -1345,11 +1349,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7937749142859458490, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 26
-      objectReference: {fileID: 0}
     - target: {fileID: 7937749144267126702, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
         type: 3}
       propertyPath: m_Enabled
@@ -1359,10 +1358,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7937749144431747416, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
+    - target: {fileID: 7937749142859458490, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_AnchoredPosition.y
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 7937749142859458489, guid: 80e5c73fc7af8c840b314d5dbf8b2a73,
         type: 3}

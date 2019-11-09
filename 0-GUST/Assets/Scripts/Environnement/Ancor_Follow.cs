@@ -24,7 +24,6 @@ public class Ancor_Follow : MonoBehaviour
         for (int i = 0; i < anchors.transform.childCount; i++)
         {
             AncorList[i] = anchors.transform.GetChild(i);
-            Debug.Log("CHILD" + i);
         }
     }
 

@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
 
     public int nextDialogToShow = 0;
 
-
     // skill, cost, isUnlocked
     private Dictionary<string, System.Tuple<int, bool>> skills = new Dictionary<string, System.Tuple<int, bool>>()
     {
@@ -42,8 +41,31 @@ public class GameManager : MonoBehaviour
 
     public List<string> unlockedSkills = new List<string>(new string[] { });
 
+    private void Start()
+    {
+        Debug.Log("start");
+    }
 
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "Levels")
+        {
+            Debug.Log("yo");
+            if (!basicCharacter)
+            {
+                basicCharacter = GameObject.Find("BasicCharacter");
 
+                System.Tuple<int, bool> t = skills["Telescopic_Arms"];
+
+                if (t.Item2)
+                {
+                    Skill_Telescopic_Arms sta = basicCharacter.GetComponentInChildren<Skill_Telescopic_Arms>(true);
+                    sta.enabled = true;
+                }
+                Debug.Log("heyyy");
+            }
+        }
+    }
     // Start is called before the first frame update
     void Awake()
     {
@@ -55,6 +77,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+
 
         DontDestroyOnLoad(gameObject);
 
@@ -127,7 +151,11 @@ public class GameManager : MonoBehaviour
         composantCount -= skills["Telescopic_Arms"].Item1;
         skills["Telescopic_Arms"] = new System.Tuple<int, bool>(skills["Telescopic_Arms"].Item1, true);
 
+        if(!basicCharacter)
+            basicCharacter = GameObject.Find("BasicCharacter");
+
         basicCharacter.GetComponent<Skill_Telescopic_Arms>().gameObject.SetActive(true);
+
 
         return false;
     }
@@ -199,10 +227,4 @@ public class GameManager : MonoBehaviour
     //    return list;
     //}
 
-
-    // Update is called once per frame
-    //void Update()
-    //{
-        
-    //}
 }

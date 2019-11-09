@@ -18,8 +18,9 @@ GameObject:
   - component: {fileID: 465172073093960551}
   - component: {fileID: 465172073093960568}
   - component: {fileID: 465172073206622909}
+  - component: {fileID: 338496879}
   m_Layer: 8
-  m_Name: BasicCharacter 1
+  m_Name: NewCharacter
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +33,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2409134891789638424}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -26, y: -0.06, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -100,14 +101,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d8c9bebef6eca4f957b25522567306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMovementSpeed: 0.15
-  accelerationFactor: 0.75
-  decelerationFactor: 1.5
+  maxMovementSpeed: 10
+  accelerationFactor: 0.1
   sprite_north: {fileID: 21300000, guid: f135dfd09c53b724fbc535467afc6901, type: 3}
   sprite_south: {fileID: 21300000, guid: 0f4090dad2f2eb843ac5ddb0d808cc80, type: 3}
   sprite_west: {fileID: 21300000, guid: f83125942b555484aaee4224f4162125, type: 3}
   sprite_east: {fileID: 21300000, guid: 0815dab0842889140bd855958ce334fc, type: 3}
   angle: 0
+  body2D: {fileID: 0}
 --- !u!114 &465172074130951626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba223c2ab75b0644e9012fd3d4c14246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vision180: {fileID: 7033977469540354910, guid: 90124e49fd8307c4d89dde43bba8eb4f,
+  vision180: {fileID: 8194501497614770677, guid: 90124e49fd8307c4d89dde43bba8eb4f,
     type: 3}
 --- !u!114 &465172074130951625
 MonoBehaviour:
@@ -225,7 +226,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a79ec1e3642eee4e9efc4663f4949c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grappleSpeed: 15
-  playerSpeed: 5
-  maxDistance: 10
+  grappleSpeed: 25
+  playerSpeed: 25
+  maxDistance: 25
   grapple: {fileID: 4315439228101677601, guid: fa3675f60c9106d48a69af459c7804ce, type: 3}
+--- !u!50 &338496879
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2409134891789638424}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

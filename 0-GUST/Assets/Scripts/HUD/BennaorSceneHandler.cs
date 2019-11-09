@@ -213,26 +213,26 @@ public class BennaorSceneHandler : MonoBehaviour
             // if the player has enough components
             // the "numberOfComponents" elseif will be executed and not the "CanGiveIf"
         }
-        else if ((numberOfComponents >= requiredNumberForUpgrade) && !alreadyAnswered)
+        else if ((numberOfComponents >= requiredNumberForUpgrade) && !alreadyAnswered && !(GameHandler.GetComponent<GameManager>().GetSkills(true)["Telescopic_Arms"].Item2))
         {
             ShowDialog(DialogName.ENOUGH);
             ShowYesNoButtons();
 
         }
-        else if ((int)DialogName.CAN_GIVE_IF == nextDialog)
+        else if ((int)DialogName.CAN_GIVE_IF == nextDialog && !(GameHandler.GetComponent<GameManager>().GetSkills(true)["Telescopic_Arms"].Item2))
         {
             ShowDialog(DialogName.CAN_GIVE_IF);
             nextDialogToShow = (int)DialogName.CAN_GIVE_IF;
 
             ShowPlayButton();
         }
-        else if ((int)DialogName.UPGRADE_INSTALLED == nextDialog)
+        else if ((int)DialogName.UPGRADE_INSTALLED == nextDialog && !(GameHandler.GetComponent<GameManager>().GetSkills(true)["Telescopic_Arms"].Item2))
         {
             ShowDialog(DialogName.UPGRADE_INSTALLED);
 
             ShowPlayButton();
         }
-        else if ((int)DialogName.REFUSED_UPGRADE == nextDialog)
+        else if ((int)DialogName.REFUSED_UPGRADE == nextDialog && !(GameHandler.GetComponent<GameManager>().GetSkills(true)["Telescopic_Arms"].Item2))
         {
             ShowDialog(DialogName.REFUSED_UPGRADE);
 

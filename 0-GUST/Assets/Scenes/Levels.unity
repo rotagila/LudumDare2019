@@ -27583,10 +27583,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638426, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2409134891789638428, guid: 7457b5807d204414fad7ef49f5de4557,
         type: 3}
       propertyPath: maxMovementSpeed
-      value: 0.3
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638428, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638428, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: accelerationFactor
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638428, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: decelerationFactor
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 465172073206622909, guid: 7457b5807d204414fad7ef49f5de4557,
         type: 3}

@@ -6,7 +6,6 @@ public class AdvancedMovement : MonoBehaviour
 {
     public float maxMovementSpeed;
     public float accelerationFactor;
-    public float decelerationFactor;
     public Sprite sprite_north;
     public Sprite sprite_south;
     public Sprite sprite_west;
@@ -14,6 +13,10 @@ public class AdvancedMovement : MonoBehaviour
 
     public float angle;
 
+    public Rigidbody2D body2D;
+
+
+    private Vector2 movement;
     private float currentSpeed;
 
     enum MovementType
@@ -26,6 +29,8 @@ public class AdvancedMovement : MonoBehaviour
     void Start()
     {
         currentSpeed = 0.0f;
+
+        body2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -36,40 +41,37 @@ public class AdvancedMovement : MonoBehaviour
     }
 
     void HandleMovement()
-    {
-        // Not moving
-        if (!Input.GetKey(KeyCode.Z) && !Input.GetKey(KeyCode.Q) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+    { 
+        movement.x = Input.GetAxisRaw("Horizontal");
+
+        movement.y = Input.GetAxisRaw("Vertical");
+
+
+        if (movement == new Vector2(0, 0))
         {
             ComputeCurrentSpeed(MovementType.DECELERATION);
         }
         else
-        {// Moving
+        {
             ComputeCurrentSpeed(MovementType.ACCELERATION);
-
-            if (Input.GetKey(KeyCode.Z) && !Input.GetKey(KeyCode.S)) // forward
-                transform.position += transform.TransformDirection(Vector3.up) * currentSpeed;
-
-            if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.Z)) // backward
-                transform.position += transform.TransformDirection(Vector3.down) * currentSpeed;
-
-            if (Input.GetKey(KeyCode.D) && !Input.GetKey("q")) // right
-                transform.position += transform.TransformDirection(Vector3.right) * currentSpeed;
-
-            if (Input.GetKey(KeyCode.Q) && !Input.GetKey("d")) // left
-                transform.position += transform.TransformDirection(Vector3.left) * currentSpeed;
         }
+
+        Debug.Log(movement * currentSpeed);
+
+
+        body2D.MovePosition(body2D.position + movement * currentSpeed * Time.deltaTime);
+
     }
 
     void ComputeCurrentSpeed(MovementType mt)
     {
         if(mt == MovementType.DECELERATION)
         {
-            currentSpeed -= decelerationFactor * maxMovementSpeed * Time.deltaTime;
-            if (currentSpeed < 0.0f) currentSpeed = 0.0f;
+            currentSpeed = 0;
         }
         else if(mt == MovementType.ACCELERATION)
         {
-            currentSpeed += accelerationFactor * maxMovementSpeed * Time.deltaTime;
+            currentSpeed += accelerationFactor * maxMovementSpeed;
             if (currentSpeed > maxMovementSpeed) currentSpeed = maxMovementSpeed;
         }
     }

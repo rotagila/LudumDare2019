@@ -30,13 +30,13 @@ public class BennaorSceneHandler : MonoBehaviour
 
     private Dictionary<DialogName, string> dialogFilenames = new Dictionary<DialogName, string>()
     {
-        {DialogName.START_PART1, "starting_dialog_0.txt" },
-        {DialogName.START_PART2, "starting_dialog_1.txt" },
-        {DialogName.GOT_CAUGHT, "got_caught.txt" },
-        {DialogName.CAN_GIVE_IF, "can_give_you_this.txt" },
-        {DialogName.ENOUGH, "enough_interested.txt" },
-        {DialogName.UPGRADE_INSTALLED, "upgrade_installed.txt" },
-        {DialogName.REFUSED_UPGRADE, "refused_upgrade.txt" }
+        {DialogName.START_PART1, "starting_dialog_0" },
+        {DialogName.START_PART2, "starting_dialog_1" },
+        {DialogName.GOT_CAUGHT, "got_caught" },
+        {DialogName.CAN_GIVE_IF, "can_give_you_this" },
+        {DialogName.ENOUGH, "enough_interested" },
+        {DialogName.UPGRADE_INSTALLED, "upgrade_installed" },
+        {DialogName.REFUSED_UPGRADE, "refused_upgrade" }
     };
 
 
@@ -83,7 +83,7 @@ public class BennaorSceneHandler : MonoBehaviour
 
     void ShowDialog(DialogName dn)
     {
-        StringBuilder sb_filepath = new StringBuilder("Assets/dialogs/");
+        StringBuilder sb_filepath = new StringBuilder("dialogs/");
         sb_filepath.Append(dialogFilenames[dn]);
 
         string dialog_text = ParseDialogFile(sb_filepath.ToString(), dn);
@@ -93,8 +93,10 @@ public class BennaorSceneHandler : MonoBehaviour
 
     string ParseDialogFile(string filepath, DialogName dn)
     {
-        StreamReader reader = new StreamReader(filepath);
-        string dialog_text = reader.ReadToEnd();
+        TextAsset textFile = Resources.Load<TextAsset>(filepath);
+    
+        //StreamReader reader = new StreamReader(filepath);
+        string dialog_text = textFile.text;
 
         if (dn == DialogName.CAN_GIVE_IF)
         {

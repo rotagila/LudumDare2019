@@ -120,12 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &25774097 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 131833643}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &63345258 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 891210159346564792, guid: c9008f80298d30a43ae7e50bda7cc55b,
@@ -4802,80 +4796,6 @@ MonoBehaviour:
   tilemap: {fileID: 2056544806}
   pathTilemap: {fileID: 1632284036}
   pathTile: {fileID: 11400000, guid: 9e542d5a93b426648ad9ee401a3df6f7, type: 2}
---- !u!1001 &131833643
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2817679839709167727, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_Name
-      value: BasicCharacter
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167727, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2817679839709167726, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6, type: 3}
 --- !u!1 &136746615
 GameObject:
   m_ObjectHideFlags: 0
@@ -5460,7 +5380,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: gridManager
@@ -12517,33 +12437,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 205956899}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &207815486 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2817679839709167727, guid: dc2353d45465baa4a9fc0b6bd2dfe6e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 131833643}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &207815500
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207815486}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!4 &222716670 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 745741865375836666, guid: 7ce81955313b3624f91eab5da62178ba,
@@ -12674,9 +12567,10 @@ GameObject:
   m_Component:
   - component: {fileID: 237227063}
   - component: {fileID: 237227064}
+  - component: {fileID: 237227065}
   m_Layer: 0
   m_Name: PoleSprite (2)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12744,6 +12638,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &237227065
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237227062}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8}
+  m_EdgeRadius: 0
 --- !u!4 &258407419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 745741865375836666, guid: 7ce81955313b3624f91eab5da62178ba,
@@ -12946,7 +12866,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: chaseSpeed
@@ -13091,7 +13011,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: chaseSpeed
@@ -13194,9 +13114,10 @@ GameObject:
   m_Component:
   - component: {fileID: 306103863}
   - component: {fileID: 306103864}
+  - component: {fileID: 306103865}
   m_Layer: 0
   m_Name: PoleSprite (1)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13264,6 +13185,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &306103865
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306103862}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8}
+  m_EdgeRadius: 0
 --- !u!1 &321316126
 GameObject:
   m_ObjectHideFlags: 0
@@ -13419,7 +13366,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: patrolSpeed
@@ -13438,6 +13385,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 327827510}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &338496868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2409134891789638424, guid: 7457b5807d204414fad7ef49f5de4557,
+    type: 3}
+  m_PrefabInstance: {fileID: 998807615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &338496879
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338496868}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!4 &352461509 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 745741865375836666, guid: 7ce81955313b3624f91eab5da62178ba,
@@ -13565,7 +13539,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: patrolSpeed
@@ -15198,7 +15172,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: patrolSpeed
@@ -15227,9 +15201,10 @@ GameObject:
   m_Component:
   - component: {fileID: 407394044}
   - component: {fileID: 407394045}
+  - component: {fileID: 407394046}
   m_Layer: 0
   m_Name: PoleSprite (1)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15297,6 +15272,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &407394046
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407394043}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8}
+  m_EdgeRadius: 0
 --- !u!4 &412916463 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 745741865335131053, guid: 7ce81955313b3624f91eab5da62178ba,
@@ -17925,7 +17926,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: chaseSpeed
@@ -19586,7 +19587,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: patrolSpeed
@@ -19999,9 +20000,10 @@ GameObject:
   m_Component:
   - component: {fileID: 779302470}
   - component: {fileID: 779302471}
+  - component: {fileID: 779302472}
   m_Layer: 0
   m_Name: PoleSprite (3)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20069,6 +20071,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &779302472
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779302469}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8}
+  m_EdgeRadius: 0
 --- !u!4 &780531467 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 745741867278725759, guid: 7ce81955313b3624f91eab5da62178ba,
@@ -20312,7 +20340,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: patrolPoints.Array.data[8]
@@ -24840,7 +24868,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: gridManager
@@ -26851,7 +26879,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: chaseSpeed
@@ -27488,6 +27516,100 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 997255021}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &998807615
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2409134891789638424, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_Name
+      value: BasicCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638425, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638425, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638425, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638425, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638425, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638425, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638425, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638425, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638425, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638425, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638425, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409134891789638428, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: maxMovementSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 465172073206622909, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 465172073206622909, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: grappleSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 465172073206622909, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: playerSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 465172073206622909, guid: 7457b5807d204414fad7ef49f5de4557,
+        type: 3}
+      propertyPath: maxDistance
+      value: 25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7457b5807d204414fad7ef49f5de4557, type: 3}
 --- !u!1001 &999421436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27609,7 +27731,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: patrolSpeed
@@ -27719,9 +27841,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1004076815}
   - component: {fileID: 1004076816}
+  - component: {fileID: 1004076817}
   m_Layer: 0
   m_Name: PoleSprite (2)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27789,6 +27912,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1004076817
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004076814}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8}
+  m_EdgeRadius: 0
 --- !u!1 &1006270827
 GameObject:
   m_ObjectHideFlags: 0
@@ -36793,9 +36942,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1175177316}
   - component: {fileID: 1175177317}
+  - component: {fileID: 1175177318}
   m_Layer: 0
   m_Name: PoleSprite (1)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36863,6 +37013,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1175177318
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175177315}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8}
+  m_EdgeRadius: 0
 --- !u!1 &1177822807
 GameObject:
   m_ObjectHideFlags: 0
@@ -39639,7 +39815,7 @@ PrefabInstance:
     - target: {fileID: 3091118322325026789, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.6397486
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3091118322325026789, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
@@ -39649,7 +39825,7 @@ PrefabInstance:
     - target: {fileID: 3091118322325026789, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: m_Size.y
-      value: 3.7868986
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 891210159346564789, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
@@ -39730,7 +39906,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: gridManager
@@ -42637,7 +42813,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: chaseSpeed
@@ -45026,7 +45202,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: chaseSpeed
@@ -46093,9 +46269,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1634973455}
   - component: {fileID: 1634973456}
+  - component: {fileID: 1634973457}
   m_Layer: 0
   m_Name: PoleSprite (1)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46163,6 +46340,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1634973457
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634973454}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8}
+  m_EdgeRadius: 0
 --- !u!1001 &1646227506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47594,7 +47797,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: patrolSpeed
@@ -47734,7 +47937,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: patrolSpeed
@@ -48058,7 +48261,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: gridManager
@@ -48340,7 +48543,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: gridManager
@@ -55167,9 +55370,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1983272619}
   - component: {fileID: 1983272618}
+  - component: {fileID: 1983272620}
   m_Layer: 0
   m_Name: Pole
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55237,6 +55441,32 @@ Transform:
   m_Father: {fileID: 1406340942}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1983272620
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983272617}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8}
+  m_EdgeRadius: 0
 --- !u!1 &2005776155
 GameObject:
   m_ObjectHideFlags: 0
@@ -55484,7 +55714,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: patrolSpeed
@@ -57421,7 +57651,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: patrolSpeed
@@ -57756,7 +57986,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: chaseSpeed
@@ -59401,9 +59631,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2084156067}
   - component: {fileID: 2084156066}
+  - component: {fileID: 2084156068}
   m_Layer: 0
   m_Name: Pole2
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59471,6 +59702,32 @@ Transform:
   m_Father: {fileID: 1406340942}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2084156068
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084156065}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8}
+  m_EdgeRadius: 0
 --- !u!1 &2087916905
 GameObject:
   m_ObjectHideFlags: 0
@@ -62381,7 +62638,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 25774097}
+      objectReference: {fileID: 0}
     - target: {fileID: 891210159346564794, guid: c9008f80298d30a43ae7e50bda7cc55b,
         type: 3}
       propertyPath: gridManager
